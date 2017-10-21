@@ -123,7 +123,7 @@ class MicrophoneViewController: UIViewController, URLSessionTaskDelegate {
             microphoneButton.setTitle("Stop Microphone", for: .normal)
             isStreaming = true
             
-            // define callbacks
+            // define callbacks//
             speechToTextSession.onConnect = { print("connected") }
             speechToTextSession.onDisconnect = { print("disconnected") }
             speechToTextSession.onError = { error in print(error) }
