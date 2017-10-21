@@ -17,11 +17,22 @@
 import UIKit
 import SpeechToTextV1
 
-class MicrophoneViewController: UIViewController {
+
+
+class MicrophoneViewController: UIViewController, URLSessionTaskDelegate {
 
     var speechToText: SpeechToText!
     var speechToTextSession: SpeechToTextSession!
     var isStreaming = false
+
+    //    nsurlsession
+    let request: Request = Request()
+//    let urlString = "http://52.199.175.14:8080/"
+//    let config = URLSessionConfiguration.default
+//    let session = URLSession.shared
+//    var req = URLRequest(url: URL(string: "http://52.199.175.14:8080/connecttest/")!)
+//    var req = URL(String: "http://52.199.175.14:8080/")
+    
     
     @IBOutlet weak var microphoneButton: UIButton!
     @IBOutlet weak var textView: UITextView!
@@ -67,7 +78,27 @@ class MicrophoneViewController: UIViewController {
 //                let typeS = String(describing: type(of: results))
 //                print(typeS)
                 self.textView.text = results.bestTranscript
-                print(self.textView.text)
+                //会話文全部
+                let conver = results.bestTranscript
+                let converUTF8 = conver.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed)
+                print(converUTF8)
+
+//                test
+//                let result = String(data: conver, encoding: String.Encoding.utf8)!
+                
+                let url: NSURL = NSURL(string: "http://52.199.175.14:8080/connecttest/"+converUTF8!)!
+                let body: NSMutableDictionary = NSMutableDictionary()
+                body.setValue("value", forKey: "key")
+                
+                do {
+                    try self.request.post(url: url as URL , body: body, completionHandler: { data, response, error in
+                        // code
+                    })
+                } catch {
+                    
+                    print("error")
+                }
+//                print(self.textView.text)
             }
             
         } else {
