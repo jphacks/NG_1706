@@ -9,6 +9,13 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBAction func goBack(_ segue:UIStoryboardSegue) {}
+    
+    @IBAction func goNext(_ sender:UIButton) {
+        let next = storyboard!.instantiateViewController(withIdentifier: "translate")
+        self.present(next,animated: true, completion: nil)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
