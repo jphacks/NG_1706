@@ -35,7 +35,17 @@ class MicrophoneViewController: UIViewController, URLSessionTaskDelegate {
     
     
     @IBOutlet weak var microphoneButton: UIButton!
+    
+    //textViewの中身を切り替える
+    @IBOutlet weak var translateButton: UIButton!
+    
+    //会話内容を表示するView
     @IBOutlet weak var textView: UITextView!
+    
+    //出現単語とその解説を表示するView
+    @IBOutlet weak var wordView1: UITextView!
+    @IBOutlet weak var wordView2: UITextView!
+    @IBOutlet weak var wordView3: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -74,24 +84,25 @@ class MicrophoneViewController: UIViewController, URLSessionTaskDelegate {
             // start recognizing microphone audio
             speechToText.recognizeMicrophone(settings: settings, model: "ja-JP_BroadbandModel", failure: failure) {
                 results in
-//                print(results)
-//                let typeS = String(describing: type(of: results))
-//                print(typeS)
+                //会話文挿入
                 self.textView.text = results.bestTranscript
-                //会話文全部
+                //if(translate == true)
+                //会話文全部(stringのurlエンコードをutf-8に変更)
                 let conver = results.bestTranscript
                 let converUTF8 = conver.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed)
-                print(converUTF8)
                 
+//                let url: NSURL = NSURL(string: "http://52.199.175.14:8080/exchangejk/"+converUTF8!)!
 
-//                test
-//                let result = String(data: conver, encoding: String.Encoding.utf8)!
+                print(converUTF8!)
                 
-                let url: NSURL = NSURL(string: "http://52.199.175.14:8080/exchangejk/"+converUTF8!)!
+                //http通信
+                let url: NSURL = NSURL(string: "http://52.199.175.14:8080/connecttest/"+converUTF8!)!
+                //たぶん何もしてない
                 let body: NSMutableDictionary = NSMutableDictionary()
                 body.setValue("value", forKey: "key")
                 
                 do {
+                    //送信
                     try self.request.post(url: url as URL , body: body, completionHandler: { data, response, error in
                         // code
                         print("data:")
@@ -129,14 +140,11 @@ class MicrophoneViewController: UIViewController, URLSessionTaskDelegate {
                     })
                     
                 } catch {
-                    
                     print("error")
                 }
-//                print(self.textView.text)
+                //print(self.textView.text)
             }
-            
         } else {
-            
             // update state
             microphoneButton.setTitle("会話開始", for: .normal)
             isStreaming = false
@@ -157,7 +165,7 @@ class MicrophoneViewController: UIViewController, URLSessionTaskDelegate {
             microphoneButton.setTitle("Stop Microphone", for: .normal)
             isStreaming = true
             
-            // define callbacks
+            // define callbacks//
             speechToTextSession.onConnect = { print("connected") }
             speechToTextSession.onDisconnect = { print("disconnected") }
             speechToTextSession.onError = { error in print(error) }
@@ -173,9 +181,7 @@ class MicrophoneViewController: UIViewController, URLSessionTaskDelegate {
             speechToTextSession.connect()
             speechToTextSession.startRequest(settings: settings)
             speechToTextSession.startMicrophone()
-            
         } else {
-            
             // update state
             microphoneButton.setTitle("Start Microphone", for: .normal)
             isStreaming = false
@@ -185,5 +191,25 @@ class MicrophoneViewController: UIViewController, URLSessionTaskDelegate {
             speechToTextSession.stopRequest()
             speechToTextSession.disconnect()
         }
+    }
+    
+    var count: Int = 1
+    //translateButtonを押した時のイベント
+    //グローバルに原文と標準語を切り替える用のboolを用意
+    //イベントにpostする部分を実装し返った
+    @IBAction func translateButtonTouchDown(_ sender: Any) {
+        //countを表示
+        textView.text = "\(count)回押したな";
+        
+        //countに応じてwordViewを表示&更新
+        if(count>=1) {wordView1.isHidden = false;}
+        if(count>=2) {wordView2.isHidden = false;}
+        if(count>=3) {wordView3.isHidden = false;}
+        wordView1.text = "\(count)";
+        wordView2.text = "\(count - 1)";
+        wordView3.text = "\(count - 2)";
+        
+        //インクリメント
+        count+=1;
     }
 }
