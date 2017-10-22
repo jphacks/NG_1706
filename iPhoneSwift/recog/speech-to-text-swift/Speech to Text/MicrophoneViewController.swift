@@ -23,6 +23,7 @@ class MicrophoneViewController: UIViewController, URLSessionTaskDelegate {
     var speechToTextSession: SpeechToTextSession!
     var isStreaming = false
     var honbun = ""
+    var honyakugo = ""
     //key(単語),value(意味)の表示
     var keyTemp = ""
     var key1 = ""
@@ -257,13 +258,7 @@ class MicrophoneViewController: UIViewController, URLSessionTaskDelegate {
                     let top = demo as! NSDictionary // トップレベルが配列
                     print(top["status"] as! String) //200
                     print(top["message"] as! String) // 本文
-                    let find_phrase = top["find_phrase"] as! NSDictionary
-                    for (key, value) in find_phrase {
-                        print(key)
-//                        self.keyTemp = key as! String
-                        print(value)
-//                        self.valueTemp = value as! String
-                    }
+                    self.honyakugo = top["message"] as! String
                     //                            }
                 } catch {
                     print(error) // パースに失敗したときにエラーを表示
