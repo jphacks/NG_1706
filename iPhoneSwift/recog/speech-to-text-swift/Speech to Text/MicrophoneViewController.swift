@@ -17,13 +17,12 @@
 import UIKit
 import SpeechToTextV1
 
-
-
 class MicrophoneViewController: UIViewController, URLSessionTaskDelegate {
 
     var speechToText: SpeechToText!
     var speechToTextSession: SpeechToTextSession!
     var isStreaming = false
+    var honbun = ""
 
     //    nsurlsession
     let request: Request = Request()
@@ -69,7 +68,6 @@ class MicrophoneViewController: UIViewController, URLSessionTaskDelegate {
      */
     public func streamMicrophoneBasic() {
         if !isStreaming {
-            
             // update state
             microphoneButton.setTitle("会話終了", for: .normal)
             isStreaming = true
@@ -87,13 +85,11 @@ class MicrophoneViewController: UIViewController, URLSessionTaskDelegate {
                 //会話文挿入
                 self.textView.text = results.bestTranscript
                 //if(translate == true)
+                //translateButton 押したときよう
+                self.honbun = results.bestTranscript
                 //会話文全部(stringのurlエンコードをutf-8に変更)
                 let conver = results.bestTranscript
                 let converUTF8 = conver.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed)
-                
-//                let url: NSURL = NSURL(string: "http://52.199.175.14:8080/exchangejk/"+converUTF8!)!
-
-                print(converUTF8!)
                 
                 //http通信
                 let url: NSURL = NSURL(string: "http://52.199.175.14:8080/connecttest/"+converUTF8!)!
@@ -108,25 +104,14 @@ class MicrophoneViewController: UIViewController, URLSessionTaskDelegate {
                         print("data:")
                         print(data) 
                         print("\n")
-
-//                        print(String(describing: type(of: data)))
-//                        print("result:")
-//                        var result = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)!
-//                        print(result)
-//                        print(String(describing: type(of: result)))
-//                        print("\n")
                         
                         let str = String(data: data!, encoding: .utf8)!
                         print(str)
                         do {
-                            let demo = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.allowFragments) // JSONパース。optionsは型推論可(".allowFragmets"等)
+                            let demo = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.allowFragments) // JSONパース。optionsは型推論可
                             let top = demo as! NSDictionary // トップレベルが配列
-//                            for roop in top {
-//                                let next = roop as! NSDictionary
-                                print(top["status"] as! String) // 1, 2 が表示
-                            
-//                                let content = next!["content"] as! NSDictionary
-                                print(top["message"] as! String) // 25, 20 が表示
+                                print(top["status"] as! String) //200
+                                print(top["message"] as! String) // 本文
                             let find_phrase = top["find_phrase"] as! NSDictionary
                             for (key, value) in find_phrase {
                                 print(key)
@@ -142,7 +127,6 @@ class MicrophoneViewController: UIViewController, URLSessionTaskDelegate {
                 } catch {
                     print("error")
                 }
-                //print(self.textView.text)
             }
         } else {
             // update state
@@ -194,21 +178,79 @@ class MicrophoneViewController: UIViewController, URLSessionTaskDelegate {
     }
     
     var count: Int = 1
+    var onJK = false
     //translateButtonを押した時のイベント
     //グローバルに原文と標準語を切り替える用のboolを用意
     //イベントにpostする部分を実装し返った
     @IBAction func translateButtonTouchDown(_ sender: Any) {
-        //countを表示
-        textView.text = "\(count)回押したな";
+        if (onJK == false) {
+            onJK = true
+        }else{
+            onJK = false
+        }
+        //key(単語),value(意味)の表示
+        var keyTemp = ""
+        var key1 = ""
+        var key2 = ""
+        var key3 = ""
+        var valueTemp = ""
+        var value1 = ""
+        var value2 = ""
+        var value3 = ""
+        //会話文全部(stringのurlエンコードをutf-8に変更)
+        let converUTF8 = honbun.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed)
         
+            let url: NSURL = NSURL(string: "http://52.199.175.14:8080/exchangejk/"+converUTF8!)!
+         if(onJK == true){
+            let url: NSURL = NSURL(string: "http://52.199.175.14:8080/reverse_exchangejk/"+converUTF8!)!
+        }
+        //たぶん何もしてない
+        let body: NSMutableDictionary = NSMutableDictionary()
+        body.setValue("value", forKey: "key")
+        
+        do {
+            //送信
+            try self.request.post(url: url as URL , body: body, completionHandler: { data, response, error in
+                // code
+                
+                let str = String(data: data!, encoding: .utf8)!
+                print(str)
+                do {
+                    let demo = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.allowFragments) // JSONパース。optionsは型推論可
+                    let top = demo as! NSDictionary // トップレベルが配列
+                    print(top["status"] as! String) //200
+                    print(top["message"] as! String) // 本文
+                    let find_phrase = top["find_phrase"] as! NSDictionary
+                    for (key, value) in find_phrase {
+                        print(key)
+                        keyTemp = key as! String
+                        print(value)
+                        valueTemp = value as! String
+                    }
+                    //                            }
+                } catch {
+                    print(error) // パースに失敗したときにエラーを表示
+                }
+            })
+        } catch {
+            print("error")
+        }
+        if(key1 != keyTemp){
+            key3 = key2
+            key2 = key1
+            key1 = keyTemp
+            value3 = value2
+            value2 = value1
+            value1 = valueTemp
+    
         //countに応じてwordViewを表示&更新
         if(count>=1) {wordView1.isHidden = false;}
         if(count>=2) {wordView2.isHidden = false;}
         if(count>=3) {wordView3.isHidden = false;}
-        wordView1.text = "\(count)";
-        wordView2.text = "\(count - 1)";
-        wordView3.text = "\(count - 2)";
-        
+        wordView1.text = key1 + ":" + value1
+        wordView2.text = key2 + ":" + value2
+        wordView3.text = key3 + ":" + value3
+        }
         //インクリメント
         count+=1;
     }
