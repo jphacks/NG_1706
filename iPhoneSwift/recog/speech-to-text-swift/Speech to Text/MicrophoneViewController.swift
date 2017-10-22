@@ -18,8 +18,8 @@ import UIKit
 import SpeechToTextV1
 
 
-
-class MicrophoneViewController: UIViewController, URLSessionTaskDelegate {
+//add by ikeda
+class MicrophoneViewController: UIViewController, URLSessionTaskDelegate,UITableViewDelegate,UITableViewDataSource {
 
     var speechToText: SpeechToText!
     var speechToTextSession: SpeechToTextSession!
@@ -42,10 +42,15 @@ class MicrophoneViewController: UIViewController, URLSessionTaskDelegate {
     //会話内容を表示するView
     @IBOutlet weak var textView: UITextView!
     
+    /*
     //出現単語とその解説を表示するView
     @IBOutlet weak var wordView1: UITextView!
     @IBOutlet weak var wordView2: UITextView!
     @IBOutlet weak var wordView3: UITextView!
+     */
+    //add by ikeda
+    //履歴の表示
+    @IBOutlet weak var table: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,6 +62,9 @@ class MicrophoneViewController: UIViewController, URLSessionTaskDelegate {
             username: Credentials.SpeechToTextUsername,
             password: Credentials.SpeechToTextPassword
         )
+        //add by ideda
+        table.delegate = self
+        table.dataSource = self
     }
     
     @IBAction func didPressMicrophoneButton(_ sender: UIButton) {
@@ -192,12 +200,29 @@ class MicrophoneViewController: UIViewController, URLSessionTaskDelegate {
             speechToTextSession.disconnect()
         }
     }
+    //add  by ikeda
+    var record = [String]() //履歴
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // 配列「record」の要素数
+        //print("record!!!!!!!")
+        return record.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        // セルの型を作る
+        let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "myCell")
+        // セルに表示するテキストを作る
+        cell.textLabel?.text = record[indexPath.row]
+        // セルをリターンする
+        return cell
+    }
     
     var count: Int = 1
     //translateButtonを押した時のイベント
     //グローバルに原文と標準語を切り替える用のboolを用意
     //イベントにpostする部分を実装し返った
     @IBAction func translateButtonTouchDown(_ sender: Any) {
+        /*
         //countを表示
         textView.text = "\(count)回押したな";
         
@@ -211,5 +236,12 @@ class MicrophoneViewController: UIViewController, URLSessionTaskDelegate {
         
         //インクリメント
         count+=1;
+         */
+        //textView.text = "test"
+        
+        record.insert(textView.text, at: 0)
+        //print(record)
+        table.reloadData() //追加を更新
+        
     }
 }
