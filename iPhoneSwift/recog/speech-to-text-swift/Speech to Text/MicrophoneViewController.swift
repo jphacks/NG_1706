@@ -82,18 +82,52 @@ class MicrophoneViewController: UIViewController, URLSessionTaskDelegate {
                 let conver = results.bestTranscript
                 let converUTF8 = conver.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed)
                 print(converUTF8)
+                
 
 //                test
 //                let result = String(data: conver, encoding: String.Encoding.utf8)!
                 
-                let url: NSURL = NSURL(string: "http://52.199.175.14:8080/connecttest/"+converUTF8!)!
+                let url: NSURL = NSURL(string: "http://52.199.175.14:8080/exchangejk/"+converUTF8!)!
                 let body: NSMutableDictionary = NSMutableDictionary()
                 body.setValue("value", forKey: "key")
                 
                 do {
                     try self.request.post(url: url as URL , body: body, completionHandler: { data, response, error in
                         // code
+                        print("data:")
+                        print(data) 
+                        print("\n")
+
+//                        print(String(describing: type(of: data)))
+//                        print("result:")
+//                        var result = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)!
+//                        print(result)
+//                        print(String(describing: type(of: result)))
+//                        print("\n")
+                        
+                        let str = String(data: data!, encoding: .utf8)!
+                        print(str)
+                        do {
+                            let demo = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.allowFragments) // JSONパース。optionsは型推論可(".allowFragmets"等)
+                            let top = demo as! NSDictionary // トップレベルが配列
+//                            for roop in top {
+//                                let next = roop as! NSDictionary
+                                print(top["status"] as! String) // 1, 2 が表示
+                            
+//                                let content = next!["content"] as! NSDictionary
+                                print(top["message"] as! String) // 25, 20 が表示
+                            let find_phrase = top["find_phrase"] as! NSDictionary
+                            for (key, value) in find_phrase {
+                                print(key)
+                                print(value)
+                            }
+//                            }
+                        } catch {
+                            print(error) // パースに失敗したときにエラーを表示
+                        }
+                        
                     })
+                    
                 } catch {
                     
                     print("error")
