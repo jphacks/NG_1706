@@ -1,0 +1,702 @@
+[I 09:22:56.461 NotebookApp] Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
+[W 09:22:56.944 NotebookApp] WARNING: The notebook server is listening on all IP addresses and not using encryption. This is not recommended.
+[I 09:22:56.970 NotebookApp] JupyterLab alpha preview extension loaded from /home/ubuntu/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/jupyterlab
+JupyterLab v0.27.0
+Known labextensions:
+[I 09:22:56.972 NotebookApp] Running the core application with no additional extensions or settings
+[I 09:22:56.975 NotebookApp] Serving notebooks from local directory: /home/ubuntu/NG_1706
+[I 09:22:56.975 NotebookApp] 0 active kernels 
+[I 09:22:56.975 NotebookApp] The Jupyter Notebook is running at: http://[all ip addresses on your system]:8888/?token=1ff54646d93ef3cb8630192278cfb5b8a7e3082997fe0e7a
+[I 09:22:56.975 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 09:22:56.975 NotebookApp] 
+    
+    Copy/paste this URL into your browser when you connect for the first time,
+    to login with a token:
+        http://localhost:8888/?token=1ff54646d93ef3cb8630192278cfb5b8a7e3082997fe0e7a
+[I 09:23:05.315 NotebookApp] Interrupted...
+[I 09:23:05.316 NotebookApp] Shutting down kernels
+[W 09:23:26.486 NotebookApp] WARNING: The notebook server is listening on all IP addresses and not using encryption. This is not recommended.
+[I 09:23:26.512 NotebookApp] JupyterLab alpha preview extension loaded from /home/ubuntu/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/jupyterlab
+JupyterLab v0.27.0
+Known labextensions:
+[I 09:23:26.513 NotebookApp] Running the core application with no additional extensions or settings
+[I 09:23:26.516 NotebookApp] Serving notebooks from local directory: /home/ubuntu/NG_1706
+[I 09:23:26.516 NotebookApp] 0 active kernels 
+[I 09:23:26.516 NotebookApp] The Jupyter Notebook is running at: http://[all ip addresses on your system]:8888/?token=c5a1e3e146810da96a36a34a56459adc0b714b0f42f03c8e
+[I 09:23:26.516 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 09:23:26.516 NotebookApp] 
+    
+    Copy/paste this URL into your browser when you connect for the first time,
+    to login with a token:
+        http://localhost:8888/?token=c5a1e3e146810da96a36a34a56459adc0b714b0f42f03c8e
+[W 09:23:37.346 NotebookApp] Couldn't authenticate WebSocket connection
+[W 09:23:37.368 NotebookApp] 403 GET /api/kernels/3fc387e9-8d30-4253-af57-d53676862806/channels?session_id=E2CB87A25328409E88BC698558317A78 (183.74.192.77) 23.91ms referer=None
+[W 09:23:45.104 NotebookApp] Couldn't authenticate WebSocket connection
+[W 09:23:45.105 NotebookApp] 403 GET /api/kernels/3fc387e9-8d30-4253-af57-d53676862806/channels?session_id=E2CB87A25328409E88BC698558317A78 (183.74.192.77) 2.63ms referer=None
+[I 09:23:48.104 NotebookApp] 302 GET /api/config/tree?_=1508577827423 (183.74.192.77) 1.31ms
+[I 09:23:48.105 NotebookApp] 302 GET /api/config/common?_=1508577827424 (183.74.192.77) 0.82ms
+[I 09:23:48.123 NotebookApp] 302 GET /api/terminals?_=1508577827425 (183.74.192.77) 0.83ms
+[I 09:23:48.124 NotebookApp] 302 GET /api/kernelspecs (183.74.192.77) 0.81ms
+[I 09:23:48.133 NotebookApp] 302 GET /api/sessions?_=1508577827426 (183.74.192.77) 0.84ms
+[I 09:23:48.134 NotebookApp] 302 GET /api/terminals?_=1508577827427 (183.74.192.77) 0.72ms
+[I 09:23:55.783 NotebookApp] 302 GET /tree/mainAPI (183.74.192.77) 0.71ms
+[I 09:25:04.467 NotebookApp] 302 GET /?token=c5a1e3e146810da96a36a34a56459adc0b714b0f42f03c8e (52.54.222.230) 0.43ms
+[I 09:25:32.383 NotebookApp] 302 GET /?token=c5a1e3e146810da96a36a34a56459adc0b714b0f42f03c8e (183.74.192.77) 0.45ms
+[I 09:25:38.009 NotebookApp] 302 GET /login?next=%2Ftree%2FmainAPI (183.74.192.77) 0.69ms
+[I 09:25:38.113 NotebookApp] 302 GET /api/config/common?_=1508577827424 (150.70.188.179) 0.73ms
+[W 09:25:45.240 NotebookApp] 404 GET /api/kernels/be1ea0f8-30b6-449d-bb87-7f462e896efe/channels?session_id=65D921C46FE94BE2A202619F23A37191 (183.74.192.77): Kernel does not exist: be1ea0f8-30b6-449d-bb87-7f462e896efe
+[W 09:25:45.242 NotebookApp] 404 GET /api/kernels/be1ea0f8-30b6-449d-bb87-7f462e896efe/channels?session_id=65D921C46FE94BE2A202619F23A37191 (183.74.192.77) 10.57ms referer=None
+[I 09:25:47.983 NotebookApp] 302 GET /api/terminals?_=1508577827425 (150.70.188.180) 0.80ms
+[W 09:25:48.564 NotebookApp] 404 GET /api/kernels/3fc387e9-8d30-4253-af57-d53676862806/channels?session_id=E2CB87A25328409E88BC698558317A78 (183.74.192.77): Kernel does not exist: 3fc387e9-8d30-4253-af57-d53676862806
+[W 09:25:48.565 NotebookApp] 404 GET /api/kernels/3fc387e9-8d30-4253-af57-d53676862806/channels?session_id=E2CB87A25328409E88BC698558317A78 (183.74.192.77) 2.51ms referer=None
+[I 09:25:50.215 NotebookApp] 302 GET /api/config/tree?_=1508577827423 (150.70.188.175) 0.88ms
+[E 09:25:57.383 NotebookApp] Exception restarting kernel
+    Traceback (most recent call last):
+      File "/home/ubuntu/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/notebook/services/kernels/handlers.py", line 90, in post
+        yield gen.maybe_future(km.restart_kernel(kernel_id))
+      File "/home/ubuntu/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/notebook/services/kernels/kernelmanager.py", line 120, in restart_kernel
+        self._check_kernel_id(kernel_id)
+      File "/home/ubuntu/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/notebook/services/kernels/kernelmanager.py", line 199, in _check_kernel_id
+        raise web.HTTPError(404, u'Kernel does not exist: %s' % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 3fc387e9-8d30-4253-af57-d53676862806)
+[E 09:25:57.384 NotebookApp] {
+      "Host": "52.199.175.14:8888",
+      "Connection": "keep-alive",
+      "Content-Length": "0",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Origin": "http://52.199.175.14:8888",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|df78feaa|740ef34edb7277849037c5782f2b2b5b|1508569351",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36",
+      "Referer": "http://52.199.175.14:8888/notebooks/mainAPI/python/connecttest.ipynb",
+      "Accept-Encoding": "gzip, deflate",
+      "Accept-Language": "ja,en-US;q=0.8,en;q=0.6",
+      "Cookie": "_xsrf=2|df78feaa|740ef34edb7277849037c5782f2b2b5b|1508569351; username-52-199-175-14-8888=\"2|1:0|10:1508577932|27:username-52-199-175-14-8888|44:ZDE2NWYxMTAzODFlNDA4MTkwYjc2MmJjOTJkYTc0Njk=|ed1c93e87daf06f8ece6f395dce1fe28eb58933f48307e5c99ff80fd8db5eb23\""
+    }
+[E 09:25:57.384 NotebookApp] 500 POST /api/kernels/3fc387e9-8d30-4253-af57-d53676862806/restart (183.74.192.77) 1.44ms referer=http://52.199.175.14:8888/notebooks/mainAPI/python/connecttest.ipynb
+[W 09:25:57.603 NotebookApp] Session not found: session_id='b5ba637e-3cd5-406d-a614-95ef13f952d7'
+[W 09:25:57.604 NotebookApp] 404 DELETE /api/sessions/b5ba637e-3cd5-406d-a614-95ef13f952d7 (183.74.192.77) 1.14ms referer=http://52.199.175.14:8888/notebooks/mainAPI/python/connecttest.ipynb
+[I 09:25:57.735 NotebookApp] Kernel started: 803584e6-3ee6-4a2a-a69a-b11d0520410e
+[I 09:25:58.640 NotebookApp] Adapting to protocol v5.1 for kernel 803584e6-3ee6-4a2a-a69a-b11d0520410e
+[E 09:26:06.444 NotebookApp] Exception restarting kernel
+    Traceback (most recent call last):
+      File "/home/ubuntu/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/notebook/services/kernels/handlers.py", line 90, in post
+        yield gen.maybe_future(km.restart_kernel(kernel_id))
+      File "/home/ubuntu/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/notebook/services/kernels/kernelmanager.py", line 120, in restart_kernel
+        self._check_kernel_id(kernel_id)
+      File "/home/ubuntu/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/notebook/services/kernels/kernelmanager.py", line 199, in _check_kernel_id
+        raise web.HTTPError(404, u'Kernel does not exist: %s' % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: be1ea0f8-30b6-449d-bb87-7f462e896efe)
+[E 09:26:06.444 NotebookApp] {
+      "Host": "52.199.175.14:8888",
+      "Connection": "keep-alive",
+      "Content-Length": "0",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Origin": "http://52.199.175.14:8888",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|df78feaa|740ef34edb7277849037c5782f2b2b5b|1508569351",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36",
+      "Referer": "http://52.199.175.14:8888/notebooks/mainAPI/python/main.ipynb",
+      "Accept-Encoding": "gzip, deflate",
+      "Accept-Language": "ja,en-US;q=0.8,en;q=0.6",
+      "Cookie": "_xsrf=2|df78feaa|740ef34edb7277849037c5782f2b2b5b|1508569351; username-52-199-175-14-8888=\"2|1:0|10:1508577932|27:username-52-199-175-14-8888|44:ZDE2NWYxMTAzODFlNDA4MTkwYjc2MmJjOTJkYTc0Njk=|ed1c93e87daf06f8ece6f395dce1fe28eb58933f48307e5c99ff80fd8db5eb23\""
+    }
+[E 09:26:06.444 NotebookApp] 500 POST /api/kernels/be1ea0f8-30b6-449d-bb87-7f462e896efe/restart (183.74.192.77) 1.15ms referer=http://52.199.175.14:8888/notebooks/mainAPI/python/main.ipynb
+[W 09:26:06.684 NotebookApp] Session not found: session_id='e7ae6c8f-b198-4255-ad3e-e712572fd305'
+[W 09:26:06.685 NotebookApp] 404 DELETE /api/sessions/e7ae6c8f-b198-4255-ad3e-e712572fd305 (183.74.192.77) 1.33ms referer=http://52.199.175.14:8888/notebooks/mainAPI/python/main.ipynb
+[I 09:26:06.791 NotebookApp] Kernel started: 5424d526-3cf9-4968-a8a4-7bde00174e4a
+[I 09:26:07.690 NotebookApp] Adapting to protocol v5.1 for kernel 5424d526-3cf9-4968-a8a4-7bde00174e4a
+[I 09:26:31.683 NotebookApp] Kernel restarted: 803584e6-3ee6-4a2a-a69a-b11d0520410e
+[I 09:26:32.888 NotebookApp] Adapting to protocol v5.1 for kernel 803584e6-3ee6-4a2a-a69a-b11d0520410e
+[I 09:28:03.071 NotebookApp] Saving file at /mainAPI/python/connecttest.ipynb
+[I 09:28:16.944 NotebookApp] Saving file at /mainAPI/python/connecttest.ipynb
+[I 09:28:32.834 NotebookApp] Kernel interrupted: 803584e6-3ee6-4a2a-a69a-b11d0520410e
+[I 09:28:35.394 NotebookApp] Kernel restarted: 803584e6-3ee6-4a2a-a69a-b11d0520410e
+[I 09:28:36.526 NotebookApp] Adapting to protocol v5.1 for kernel 803584e6-3ee6-4a2a-a69a-b11d0520410e
+[I 09:28:58.057 NotebookApp] 302 GET /api/config/tree?_=1508577938105 (52.27.2.86) 0.88ms
+[I 09:29:05.764 NotebookApp] 302 GET /api/sessions?_=1508577938108 (52.27.2.86) 0.80ms
+[I 09:29:25.878 NotebookApp] 302 GET /?token=c5a1e3e146810da96a36a34a56459adc0b714b0f42f03c8e (50.112.194.65) 0.48ms
+[I 09:29:30.479 NotebookApp] 302 GET /api/terminals?_=1508577938109 (52.27.2.86) 0.81ms
+[I 09:29:35.970 NotebookApp] 302 GET /api/terminals?_=1508577941041 (52.27.2.86) 1.09ms
+[I 09:29:40.833 NotebookApp] 302 GET /api/terminals?_=1508577941039 (52.27.2.86) 0.82ms
+[I 09:29:42.157 NotebookApp] 302 GET /api/config/tree?_=1508577933220 (52.27.2.86) 0.85ms
+[I 09:29:45.180 NotebookApp] 302 GET /api/contents?type=directory&_=1508577933225 (52.27.2.86) 0.89ms
+[I 09:29:49.750 NotebookApp] 302 GET /api/config/common?_=1508577938106 (52.27.2.86) 0.81ms
+[I 09:29:57.349 NotebookApp] 302 GET /api/config/common?_=1508577933221 (50.112.194.65) 0.84ms
+[I 09:29:59.303 NotebookApp] Kernel interrupted: 803584e6-3ee6-4a2a-a69a-b11d0520410e
+[I 09:30:02.024 NotebookApp] 302 GET /api/config/tree?_=1508577941037 (50.112.194.65) 0.82ms
+[I 09:30:03.286 NotebookApp] Saving file at /mainAPI/python/connecttest.ipynb
+[W 09:30:04.690 NotebookApp] Couldn't authenticate WebSocket connection
+[W 09:30:04.691 NotebookApp] 403 GET /api/kernels/be1ea0f8-30b6-449d-bb87-7f462e896efe/channels?session_id=65D921C46FE94BE2A202619F23A37191 (50.112.194.65) 2.47ms referer=None
+[I 09:30:05.303 NotebookApp] 302 GET /api/terminals?_=1508577938107 (52.27.2.86) 0.77ms
+[I 09:30:07.227 NotebookApp] 302 GET /api/terminals?_=1508577933224 (50.112.194.65) 0.77ms
+[I 09:30:08.052 NotebookApp] 302 GET /api/terminals?_=1508577933222 (50.112.194.65) 0.80ms
+[I 09:30:13.252 NotebookApp] Kernel restarted: 803584e6-3ee6-4a2a-a69a-b11d0520410e
+[I 09:30:14.492 NotebookApp] Adapting to protocol v5.1 for kernel 803584e6-3ee6-4a2a-a69a-b11d0520410e
+[I 09:30:18.115 NotebookApp] 302 GET /tree/mainAPI/python (52.27.2.86) 0.66ms
+[I 09:30:28.037 NotebookApp] 302 GET /api/contents/mainAPI?type=directory&_=1508577938110 (52.27.2.86) 0.87ms
+[W 09:30:29.535 NotebookApp] Couldn't authenticate WebSocket connection
+[W 09:30:29.537 NotebookApp] 403 GET /api/kernels/5424d526-3cf9-4968-a8a4-7bde00174e4a/channels?session_id=65D921C46FE94BE2A202619F23A37191 (52.27.2.86) 2.42ms referer=None
+[I 09:30:36.851 NotebookApp] 302 GET /files/mainAPI/data/it.csv (50.112.194.65) 0.65ms
+[I 09:30:37.189 NotebookApp] 302 GET /api/config/common?_=1508577941038 (50.112.194.65) 0.86ms
+[I 09:30:37.965 NotebookApp] 302 GET /api/sessions?_=1508577941040 (50.112.194.65) 0.85ms
+[I 09:30:48.246 NotebookApp] 302 GET /api/contents/mainAPI/python/connecttest.ipynb?content=0&_=1508575321528 (150.70.188.180) 0.89ms
+[I 09:30:48.601 NotebookApp] Saving file at /mainAPI/python/connecttest.ipynb
+[I 09:30:49.548 NotebookApp] Kernel interrupted: 803584e6-3ee6-4a2a-a69a-b11d0520410e
+[I 09:30:52.298 NotebookApp] Kernel restarted: 803584e6-3ee6-4a2a-a69a-b11d0520410e
+[I 09:30:53.406 NotebookApp] Adapting to protocol v5.1 for kernel 803584e6-3ee6-4a2a-a69a-b11d0520410e
+[I 09:31:02.137 NotebookApp] 302 GET /api/contents/mainAPI/python?type=directory&_=1508577941042 (50.112.194.65) 0.93ms
+[I 09:31:12.747 NotebookApp] 302 GET /api/contents/mainAPI/python/connecttest.ipynb?content=0&_=1508575321526 (50.112.194.65) 0.89ms
+[I 09:31:16.743 NotebookApp] 302 GET /api/contents/mainAPI/python/connecttest.ipynb?content=0&_=1508575321527 (52.27.2.86) 0.85ms
+[I 09:31:22.727 NotebookApp] 302 GET /api/sessions?_=1508577933223 (52.27.2.86) 0.81ms
+[W 09:31:58.523 NotebookApp] Couldn't authenticate WebSocket connection
+[W 09:31:58.525 NotebookApp] 403 GET /api/kernels/803584e6-3ee6-4a2a-a69a-b11d0520410e/channels?session_id=E2CB87A25328409E88BC698558317A78 (52.27.2.86) 3.73ms referer=None
+[I 09:32:03.799 NotebookApp] Saving file at /mainAPI/python/connecttest.ipynb
+[I 09:32:43.400 NotebookApp] Saving file at /mainAPI/python/connecttest.ipynb
+[I 09:32:43.629 NotebookApp] Kernel interrupted: 803584e6-3ee6-4a2a-a69a-b11d0520410e
+[I 09:32:46.914 NotebookApp] Kernel restarted: 803584e6-3ee6-4a2a-a69a-b11d0520410e
+[I 09:32:47.986 NotebookApp] Adapting to protocol v5.1 for kernel 803584e6-3ee6-4a2a-a69a-b11d0520410e
+[I 09:33:07.695 NotebookApp] 302 GET /api/contents/mainAPI/python/connecttest.ipynb?content=0&_=1508575321529 (52.27.2.86) 0.86ms
+[I 09:33:30.966 NotebookApp] 302 GET /api/contents/mainAPI/python/connecttest.ipynb?content=0&_=1508575321531 (150.70.188.169) 0.85ms
+[I 09:34:03.302 NotebookApp] Saving file at /mainAPI/python/connecttest.ipynb
+[W 09:34:08.040 NotebookApp] Couldn't authenticate WebSocket connection
+[W 09:34:08.041 NotebookApp] 403 GET /api/kernels/803584e6-3ee6-4a2a-a69a-b11d0520410e/channels?session_id=E2CB87A25328409E88BC698558317A78 (150.70.188.178) 2.52ms referer=None
+[I 09:34:19.110 NotebookApp] 302 GET /api/contents/mainAPI/python/connecttest.ipynb?content=0&_=1508575321530 (50.112.194.65) 0.86ms
+[I 09:35:06.047 NotebookApp] Kernel interrupted: 803584e6-3ee6-4a2a-a69a-b11d0520410e
+[I 09:35:08.513 NotebookApp] Kernel restarted: 803584e6-3ee6-4a2a-a69a-b11d0520410e
+[I 09:35:09.586 NotebookApp] Adapting to protocol v5.1 for kernel 803584e6-3ee6-4a2a-a69a-b11d0520410e
+[I 09:35:52.715 NotebookApp] 302 GET /api/contents/mainAPI/python/connecttest.ipynb?content=0&_=1508575321532 (150.70.188.170) 0.89ms
+[I 09:36:03.030 NotebookApp] Saving file at /mainAPI/python/connecttest.ipynb
+[I 09:37:46.873 NotebookApp] 302 GET /api/contents/mainAPI/python/connecttest.ipynb?content=0&_=1508575321533 (50.112.194.65) 0.92ms
+[I 09:38:03.554 NotebookApp] Saving file at /mainAPI/python/connecttest.ipynb
+[I 09:39:37.106 NotebookApp] 302 GET /api/contents/mainAPI/python/connecttest.ipynb?content=0&_=1508575321534 (52.27.2.86) 0.90ms
+[I 09:40:03.720 NotebookApp] Saving file at /mainAPI/python/connecttest.ipynb
+[I 09:42:03.713 NotebookApp] Saving file at /mainAPI/python/connecttest.ipynb
+[I 09:42:16.037 NotebookApp] 302 GET /api/contents/mainAPI/python/connecttest.ipynb?content=0&_=1508575321535 (52.27.2.86) 0.87ms
+[I 09:42:34.530 NotebookApp] Saving file at /mainAPI/python/connecttest.ipynb
+[I 09:42:34.967 NotebookApp] Kernel interrupted: 803584e6-3ee6-4a2a-a69a-b11d0520410e
+[I 09:42:38.010 NotebookApp] Kernel restarted: 803584e6-3ee6-4a2a-a69a-b11d0520410e
+[I 09:42:39.125 NotebookApp] Adapting to protocol v5.1 for kernel 803584e6-3ee6-4a2a-a69a-b11d0520410e
+[I 09:43:46.082 NotebookApp] Saving file at /mainAPI/python/connecttest.ipynb
+[I 09:43:53.863 NotebookApp] Kernel restarted: 803584e6-3ee6-4a2a-a69a-b11d0520410e
+[I 09:43:55.104 NotebookApp] Adapting to protocol v5.1 for kernel 803584e6-3ee6-4a2a-a69a-b11d0520410e
+[I 09:44:03.546 NotebookApp] Saving file at /mainAPI/python/connecttest.ipynb
+[I 09:44:04.912 NotebookApp] 302 GET /api/contents/mainAPI/python/connecttest.ipynb?content=0&_=1508575321536 (50.112.194.65) 0.88ms
+[I 09:44:57.071 NotebookApp] 302 GET /api/contents/mainAPI/python/connecttest.ipynb?content=0&_=1508575321537 (50.112.194.65) 0.83ms
+[I 09:45:17.391 NotebookApp] 302 GET /api/contents/mainAPI/python/connecttest.ipynb?content=0&_=1508575321539 (150.70.188.180) 0.93ms
+[I 09:45:26.641 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 09:45:28.202 NotebookApp] 302 GET /api/contents/mainAPI/python/connecttest.ipynb?content=0&_=1508575321538 (150.70.188.178) 0.90ms
+[I 09:45:48.381 NotebookApp] Kernel restarted: 803584e6-3ee6-4a2a-a69a-b11d0520410e
+[I 09:45:49.524 NotebookApp] Adapting to protocol v5.1 for kernel 803584e6-3ee6-4a2a-a69a-b11d0520410e
+[I 09:46:03.684 NotebookApp] Saving file at /mainAPI/python/connecttest.ipynb
+[I 09:47:26.871 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 09:47:31.921 NotebookApp] Kernel interrupted: 803584e6-3ee6-4a2a-a69a-b11d0520410e
+[I 09:47:34.388 NotebookApp] Kernel restarted: 803584e6-3ee6-4a2a-a69a-b11d0520410e
+[I 09:47:35.683 NotebookApp] Adapting to protocol v5.1 for kernel 803584e6-3ee6-4a2a-a69a-b11d0520410e
+[I 09:47:50.631 NotebookApp] 302 GET /api/contents/mainAPI/python/connecttest.ipynb?content=0&_=1508575321540 (150.70.188.166) 0.88ms
+[I 09:48:03.599 NotebookApp] Saving file at /mainAPI/python/connecttest.ipynb
+[I 09:48:12.466 NotebookApp] Saving file at /mainAPI/python/connecttest.ipynb
+[I 09:48:19.942 NotebookApp] Kernel restarted: 803584e6-3ee6-4a2a-a69a-b11d0520410e
+[I 09:48:19.946 NotebookApp] 302 GET /api/contents/mainAPI/python/main.ipynb?content=0&_=1508572042604 (50.112.194.65) 1.14ms
+[I 09:48:19.947 NotebookApp] 302 GET /api/contents/mainAPI/python/main.ipynb?content=0&_=1508572042605 (150.70.188.165) 0.69ms
+[I 09:48:21.078 NotebookApp] Adapting to protocol v5.1 for kernel 803584e6-3ee6-4a2a-a69a-b11d0520410e
+[I 09:48:28.226 NotebookApp] 302 GET /api/contents/mainAPI/python/connecttest.ipynb?content=0&_=1508575321541 (150.70.188.169) 0.90ms
+[I 09:50:05.437 NotebookApp] Kernel restarted: 803584e6-3ee6-4a2a-a69a-b11d0520410e
+[I 09:50:06.877 NotebookApp] Saving file at /mainAPI/python/connecttest.ipynb
+[I 09:50:07.067 NotebookApp] Adapting to protocol v5.1 for kernel 803584e6-3ee6-4a2a-a69a-b11d0520410e
+[I 09:50:40.695 NotebookApp] 302 GET /api/contents/mainAPI/python/connecttest.ipynb?content=0&_=1508575321542 (150.70.188.179) 0.88ms
+[I 09:51:03.089 NotebookApp] Kernel interrupted: 803584e6-3ee6-4a2a-a69a-b11d0520410e
+[I 09:51:06.406 NotebookApp] Kernel restarted: 803584e6-3ee6-4a2a-a69a-b11d0520410e
+[I 09:51:07.658 NotebookApp] Adapting to protocol v5.1 for kernel 803584e6-3ee6-4a2a-a69a-b11d0520410e
+[I 09:51:15.173 NotebookApp] 302 GET /api/contents/mainAPI/python/connecttest.ipynb?content=0&_=1508575321543 (50.112.194.65) 0.92ms
+[I 09:52:03.755 NotebookApp] Saving file at /mainAPI/python/connecttest.ipynb
+[I 09:53:59.284 NotebookApp] 302 GET /api/contents/mainAPI/python/connecttest.ipynb?content=0&_=1508575321544 (150.70.188.170) 0.95ms
+[I 09:54:04.057 NotebookApp] Saving file at /mainAPI/python/connecttest.ipynb
+[I 09:55:07.943 NotebookApp] 302 GET /api/contents/mainAPI/python/connecttest.ipynb?content=0&_=1508575321545 (150.70.188.178) 0.86ms
+[I 09:56:05.016 NotebookApp] Saving file at /mainAPI/python/connecttest.ipynb
+[I 09:57:36.738 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 09:57:39.366 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 09:57:41.307 NotebookApp] 302 GET /?token=c5a1e3e146810da96a36a34a56459adc0b714b0f42f03c8e (183.74.192.77) 0.42ms
+[I 09:57:41.654 NotebookApp] 302 GET /api/contents/mainAPI/python/connecttest.ipynb?content=0&_=1508575321546 (150.70.188.179) 0.90ms
+[I 09:57:54.624 NotebookApp] Kernel started: 583ae7b6-accb-4588-9bf6-8160f847cec1
+[I 09:57:55.519 NotebookApp] Adapting to protocol v5.1 for kernel 583ae7b6-accb-4588-9bf6-8160f847cec1
+[I 09:58:04.698 NotebookApp] Saving file at /mainAPI/python/connecttest.ipynb
+[I 09:59:35.750 NotebookApp] 302 GET /api/contents/mainAPI/python/main.ipynb?content=0&_=1508572042606 (52.27.2.86) 0.93ms
+[I 09:59:51.790 NotebookApp] 302 GET /api/contents/mainAPI/python/main.ipynb?content=0&_=1508572042607 (50.112.194.65) 0.84ms
+[I 09:59:54.758 NotebookApp] Saving file at /mainAPI/python/csvtest.ipynb
+[I 10:00:05.387 NotebookApp] Saving file at /mainAPI/python/connecttest.ipynb
+[I 10:00:18.781 NotebookApp] 302 GET /api/contents/mainAPI/python/connecttest.ipynb?content=0&_=1508575321547 (50.112.194.65) 0.90ms
+[I 10:01:25.524 NotebookApp] 302 GET /api/contents/mainAPI/python/connecttest.ipynb?content=0&_=1508575321548 (150.70.188.170) 0.91ms
+[I 10:02:05.015 NotebookApp] Saving file at /mainAPI/python/connecttest.ipynb
+[I 10:02:31.988 NotebookApp] Kernel interrupted: 803584e6-3ee6-4a2a-a69a-b11d0520410e
+[I 10:02:35.899 NotebookApp] Kernel restarted: 803584e6-3ee6-4a2a-a69a-b11d0520410e
+[I 10:02:37.017 NotebookApp] Adapting to protocol v5.1 for kernel 803584e6-3ee6-4a2a-a69a-b11d0520410e
+[W 10:02:55.520 NotebookApp] WebSocket ping timeout after 119902 ms.
+[I 10:03:02.470 NotebookApp] Kernel restarted: 803584e6-3ee6-4a2a-a69a-b11d0520410e
+[I 10:03:03.629 NotebookApp] Adapting to protocol v5.1 for kernel 803584e6-3ee6-4a2a-a69a-b11d0520410e
+[I 10:03:46.781 NotebookApp] 302 GET /api/contents/mainAPI/python/connecttest.ipynb?content=0&_=1508575321549 (52.27.2.86) 0.92ms
+[I 10:03:54.770 NotebookApp] Saving file at /mainAPI/python/csvtest.ipynb
+[I 10:04:03.593 NotebookApp] Saving file at /mainAPI/python/connecttest.ipynb
+[I 10:04:44.676 NotebookApp] Adapting to protocol v5.1 for kernel 5424d526-3cf9-4968-a8a4-7bde00174e4a
+[I 10:04:53.105 NotebookApp] Saving file at /mainAPI/python/connecttest.ipynb
+[I 10:05:50.791 NotebookApp] 302 GET /api/contents/mainAPI/python/connecttest.ipynb?content=0&_=1508575321550 (50.112.194.65) 0.86ms
+[I 10:05:55.966 NotebookApp] Kernel restarted: 803584e6-3ee6-4a2a-a69a-b11d0520410e
+[I 10:05:56.228 NotebookApp] Saving file at /mainAPI/python/csvtest.ipynb
+[I 10:05:57.007 NotebookApp] Adapting to protocol v5.1 for kernel 803584e6-3ee6-4a2a-a69a-b11d0520410e
+[I 10:06:03.194 NotebookApp] Saving file at /mainAPI/python/connecttest.ipynb
+[I 10:07:06.468 NotebookApp] Kernel restarted: 803584e6-3ee6-4a2a-a69a-b11d0520410e
+[I 10:07:06.471 NotebookApp] 302 GET /api/contents/mainAPI/python/connecttest.ipynb?content=0&_=1508575321551 (52.27.2.86) 1.04ms
+[I 10:07:07.990 NotebookApp] Adapting to protocol v5.1 for kernel 803584e6-3ee6-4a2a-a69a-b11d0520410e
+[I 10:07:24.036 NotebookApp] 302 GET /api/contents/mainAPI/python/connecttest.ipynb?content=0&_=1508575321552 (150.70.188.165) 0.93ms
+[I 10:08:03.471 NotebookApp] Saving file at /mainAPI/python/connecttest.ipynb
+[I 10:09:54.890 NotebookApp] Saving file at /mainAPI/python/csvtest.ipynb
+[I 10:10:03.348 NotebookApp] Saving file at /mainAPI/python/connecttest.ipynb
+[I 10:10:06.119 NotebookApp] 302 GET /api/contents/mainAPI/python/connecttest.ipynb?content=0&_=1508575321553 (50.112.194.65) 0.84ms
+[I 10:11:31.413 NotebookApp] Kernel restarted: 803584e6-3ee6-4a2a-a69a-b11d0520410e
+[I 10:11:32.560 NotebookApp] Adapting to protocol v5.1 for kernel 803584e6-3ee6-4a2a-a69a-b11d0520410e
+[I 10:11:54.732 NotebookApp] Saving file at /mainAPI/python/csvtest.ipynb
+[I 10:12:06.334 NotebookApp] Kernel restarted: 803584e6-3ee6-4a2a-a69a-b11d0520410e
+[I 10:12:06.497 NotebookApp] Saving file at /mainAPI/python/connecttest.ipynb
+[I 10:12:07.571 NotebookApp] Adapting to protocol v5.1 for kernel 803584e6-3ee6-4a2a-a69a-b11d0520410e
+[I 10:12:10.821 NotebookApp] 302 GET /api/contents/mainAPI/python/connecttest.ipynb?content=0&_=1508575321554 (52.27.2.86) 0.89ms
+[I 10:12:32.413 NotebookApp] Kernel restarted: 803584e6-3ee6-4a2a-a69a-b11d0520410e
+[I 10:12:33.992 NotebookApp] Adapting to protocol v5.1 for kernel 803584e6-3ee6-4a2a-a69a-b11d0520410e
+[I 10:12:56.371 NotebookApp] Adapting to protocol v5.1 for kernel 803584e6-3ee6-4a2a-a69a-b11d0520410e
+[W 10:13:36.116 NotebookApp] Couldn't authenticate WebSocket connection
+[W 10:13:36.117 NotebookApp] 403 GET /api/kernels/803584e6-3ee6-4a2a-a69a-b11d0520410e/channels?session_id=E2CB87A25328409E88BC698558317A78 (52.27.2.86) 2.75ms referer=None
+[I 10:13:37.331 NotebookApp] Adapting to protocol v5.1 for kernel 5424d526-3cf9-4968-a8a4-7bde00174e4a
+[I 10:13:45.421 NotebookApp] 302 GET /api/contents/mainAPI/python/connecttest.ipynb?content=0&_=1508575321555 (150.70.188.176) 0.91ms
+[I 10:13:48.347 NotebookApp] Saving file at /mainAPI/python/csvtest.ipynb
+[I 10:14:00.639 NotebookApp] Adapting to protocol v5.1 for kernel 583ae7b6-accb-4588-9bf6-8160f847cec1
+[I 10:14:05.079 NotebookApp] Saving file at /mainAPI/python/connecttest.ipynb
+[I 10:14:57.311 NotebookApp] 302 GET /api/contents/mainAPI/python/connecttest.ipynb?content=0&_=1508575321556 (150.70.188.172) 0.89ms
+[I 10:15:01.864 NotebookApp] 302 GET /api/terminals?_=1508577941044 (50.112.194.65) 0.77ms
+[I 10:15:08.561 NotebookApp] 302 GET /api/config/common?_=1508580814340 (50.112.194.65) 0.85ms
+[I 10:15:23.047 NotebookApp] 302 GET /api/sessions?_=1508577941046 (150.70.188.170) 0.83ms
+[I 10:15:36.353 NotebookApp] 302 GET /api/contents/mainAPI/python/main.ipynb?type=notebook&_=1508580814341 (52.27.2.86) 0.92ms
+[I 10:15:36.710 NotebookApp] 302 GET /api/contents/mainAPI/python?type=directory&_=1508577941048 (52.27.2.86) 0.91ms
+[W 10:15:40.539 NotebookApp] Couldn't authenticate WebSocket connection
+[W 10:15:40.540 NotebookApp] 403 GET /api/kernels/583ae7b6-accb-4588-9bf6-8160f847cec1/channels?session_id=B52DF6A42B7242E48D5BD6064B95D1DA (52.27.2.86) 2.40ms referer=None
+[I 10:15:41.376 NotebookApp] 302 GET /api/contents/mainAPI/python/main.ipynb/checkpoints?_=1508580814342 (52.27.2.86) 0.87ms
+[I 10:15:41.998 NotebookApp] 302 GET /notebooks/mainAPI/python/csvtest.ipynb (150.70.188.166) 0.64ms
+[I 10:15:42.717 NotebookApp] 302 GET /api/contents/mainAPI/python/csvtest.ipynb/checkpoints?_=1508580838433 (52.27.2.86) 0.87ms
+[I 10:15:46.260 NotebookApp] 302 GET /api/contents/mainAPI/python?type=directory&_=1508577941045 (52.27.2.86) 0.86ms
+[I 10:15:49.000 NotebookApp] 302 GET /api/config/common?_=1508580838431 (52.27.2.86) 0.87ms
+[I 10:15:54.158 NotebookApp] 302 GET /api/sessions?_=1508577941043 (50.112.194.65) 0.81ms
+[I 10:15:54.887 NotebookApp] Saving file at /mainAPI/python/csvtest.ipynb
+[I 10:15:56.307 NotebookApp] 302 GET /api/config/notebook?_=1508580838430 (50.112.194.65) 0.89ms
+[I 10:16:02.096 NotebookApp] 302 GET /api/config/notebook?_=1508580814339 (52.27.2.86) 0.87ms
+[I 10:16:04.536 NotebookApp] Saving file at /mainAPI/python/connecttest.ipynb
+[I 10:16:07.723 NotebookApp] 302 GET /api/terminals?_=1508577941047 (50.112.194.65) 0.77ms
+[I 10:16:11.561 NotebookApp] 302 GET /notebooks/mainAPI/python/main.ipynb (52.27.2.86) 0.62ms
+[W 10:16:15.706 NotebookApp] Couldn't authenticate WebSocket connection
+[W 10:16:15.707 NotebookApp] 403 GET /api/kernels/5424d526-3cf9-4968-a8a4-7bde00174e4a/channels?session_id=834A31807855455A853FC42014F913A0 (52.27.2.86) 2.39ms referer=None
+[I 10:16:19.719 NotebookApp] 302 GET /api/kernelspecs (52.27.2.86) 0.86ms
+[I 10:16:19.818 NotebookApp] 302 GET /api/contents/mainAPI/python/csvtest.ipynb?type=notebook&_=1508580838432 (50.112.194.65) 0.86ms
+[I 10:16:28.972 NotebookApp] Saving file at /mainAPI/python/csvtest.ipynb
+[I 10:16:32.672 NotebookApp] Adapting to protocol v5.1 for kernel 5424d526-3cf9-4968-a8a4-7bde00174e4a
+[I 10:17:02.841 NotebookApp] 302 GET /api/contents/mainAPI/python/connecttest.ipynb?content=0&_=1508575321557 (150.70.188.172) 0.89ms
+[I 10:18:02.636 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 10:18:09.304 NotebookApp] 302 GET /api/contents/mainAPI/python/main.ipynb/checkpoints?_=1508580990351 (150.70.188.170) 0.87ms
+[I 10:18:09.398 NotebookApp] Saving file at /mainAPI/python/connecttest.ipynb
+[W 10:18:09.563 NotebookApp] Couldn't authenticate WebSocket connection
+[W 10:18:09.564 NotebookApp] 403 GET /api/kernels/5424d526-3cf9-4968-a8a4-7bde00174e4a/channels?session_id=E5BA8CAE150840D38230930C823921C9 (150.70.188.175) 2.40ms referer=None
+[I 10:18:13.988 NotebookApp] 302 GET /api/contents/mainAPI/python/main.ipynb?type=notebook&_=1508580990350 (150.70.188.166) 0.91ms
+[I 10:18:18.040 NotebookApp] 302 GET /api/terminals?_=1508577941050 (150.70.188.169) 0.78ms
+[I 10:18:51.064 NotebookApp] 302 GET /api/sessions?_=1508577941049 (150.70.188.166) 0.85ms
+[I 10:18:52.882 NotebookApp] 302 GET /api/contents/mainAPI/python?type=directory&_=1508577941051 (150.70.188.170) 0.83ms
+[I 10:18:58.606 NotebookApp] 302 GET /api/config/notebook?_=1508580990348 (150.70.188.170) 0.86ms
+[I 10:18:59.787 NotebookApp] 302 GET /api/config/common?_=1508580990349 (150.70.188.178) 0.83ms
+[I 10:19:12.062 NotebookApp] 302 GET /api/contents/mainAPI/python/main.ipynb?content=0&_=1508580990352 (150.70.188.178) 0.89ms
+[I 10:20:03.773 NotebookApp] 302 GET /api/contents/mainAPI/python/connecttest.ipynb?content=0&_=1508575321558 (50.112.194.65) 0.87ms
+[I 10:21:35.448 NotebookApp] Kernel restarted: 803584e6-3ee6-4a2a-a69a-b11d0520410e
+[I 10:21:36.511 NotebookApp] Adapting to protocol v5.1 for kernel 803584e6-3ee6-4a2a-a69a-b11d0520410e
+[I 10:21:42.212 NotebookApp] Saving file at /mainAPI/python/connecttest.ipynb
+[I 10:21:42.328 NotebookApp] Saving file at /mainAPI/python/connecttest.ipynb
+[I 10:21:46.577 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 10:22:43.959 NotebookApp] 302 GET /api/terminals?_=1508577941053 (50.112.194.65) 0.78ms
+[I 10:22:54.976 NotebookApp] 302 GET /api/sessions?_=1508577941052 (52.27.2.86) 0.84ms
+[I 10:23:14.908 NotebookApp] 302 GET /api/contents/mainAPI/python?type=directory&_=1508577941054 (52.27.2.86) 0.91ms
+[I 10:23:37.554 NotebookApp] 302 GET /api/sessions?_=1508577941055 (52.27.2.86) 0.83ms
+[I 10:23:38.380 NotebookApp] 302 GET /api/contents/mainAPI/python/connecttest.ipynb?content=0&_=1508575321559 (50.112.194.65) 0.86ms
+[W 10:23:44.677 NotebookApp] WebSocket ping timeout after 119857 ms.
+[W 10:23:56.373 NotebookApp] WebSocket ping timeout after 119874 ms.
+[I 10:24:07.156 NotebookApp] 302 GET /api/contents/mainAPI/python/main.ipynb?content=0&_=1508580990353 (50.112.194.65) 0.87ms
+[I 10:24:17.022 NotebookApp] 302 GET /api/sessions?_=1508577941058 (150.70.188.172) 0.86ms
+[I 10:24:21.435 NotebookApp] 302 GET /api/contents/mainAPI/python?type=directory&_=1508577941057 (50.112.194.65) 0.84ms
+[I 10:24:23.178 NotebookApp] 302 GET /api/terminals?_=1508577941056 (52.27.2.86) 0.78ms
+[I 10:24:25.902 NotebookApp] 302 GET /api/contents/mainAPI/python/connecttest.ipynb?content=0&_=1508575321560 (52.27.2.86) 0.89ms
+[I 10:24:30.489 NotebookApp] 302 GET /api/terminals?_=1508577941059 (150.70.188.179) 0.77ms
+[I 10:24:36.552 NotebookApp] 302 GET /api/contents/mainAPI/python?type=directory&_=1508577941060 (150.70.188.177) 0.86ms
+[I 10:24:47.618 NotebookApp] Creating new notebook in /mainAPI/python
+[I 10:24:50.060 NotebookApp] Kernel started: 045d5cd2-4f97-412b-9dfb-d0975f2e4380
+[I 10:24:51.047 NotebookApp] Adapting to protocol v5.1 for kernel 045d5cd2-4f97-412b-9dfb-d0975f2e4380
+[I 10:25:40.611 NotebookApp] 302 GET /api/sessions?_=1508577941061 (50.112.194.65) 0.89ms
+[I 10:26:01.269 NotebookApp] 302 GET /api/contents/mainAPI/python?type=directory&_=1508577941063 (50.112.194.65) 0.93ms
+[I 10:26:09.842 NotebookApp] 302 GET /api/kernelspecs (150.70.188.172) 0.86ms
+[I 10:26:38.099 NotebookApp] 302 GET /notebooks/mainAPI/python/Untitled.ipynb?kernel_name=python3 (150.70.188.180) 0.68ms
+[I 10:26:38.942 NotebookApp] 302 GET /api/contents/mainAPI/python/Untitled.ipynb/checkpoints?_=1508581488539 (150.70.188.177) 0.92ms
+[I 10:26:41.601 NotebookApp] 302 GET /api/config/notebook?_=1508581488536 (150.70.188.169) 0.84ms
+[I 10:26:43.190 NotebookApp] 302 GET /api/contents/mainAPI/python/Untitled.ipynb?type=notebook&_=1508581488538 (150.70.188.176) 0.86ms
+[W 10:26:43.867 NotebookApp] Couldn't authenticate WebSocket connection
+[W 10:26:43.868 NotebookApp] 403 GET /api/kernels/045d5cd2-4f97-412b-9dfb-d0975f2e4380/channels?session_id=177AD12510AE4AFFA057AAA1C042BEF3 (150.70.188.176) 2.43ms referer=None
+[I 10:26:50.349 NotebookApp] Saving file at /mainAPI/python/Untitled.ipynb
+[I 10:27:16.994 NotebookApp] 302 GET /api/config/common?_=1508581488537 (52.27.2.86) 0.84ms
+[I 10:28:19.924 NotebookApp] 302 GET /api/terminals?_=1508577941065 (50.112.194.65) 0.77ms
+[I 10:28:25.427 NotebookApp] 302 GET /api/contents/mainAPI/python?type=directory&_=1508577941066 (52.27.2.86) 0.84ms
+[I 10:28:34.535 NotebookApp] 302 GET /api/sessions?_=1508577941064 (50.112.194.65) 0.81ms
+[I 10:28:50.609 NotebookApp] Saving file at /mainAPI/python/Untitled.ipynb
+[I 10:29:13.225 NotebookApp] 302 GET /api/contents/mainAPI/python/Untitled.ipynb?content=0&_=1508581488540 (50.112.194.65) 0.85ms
+[I 10:31:23.063 NotebookApp] 302 GET /api/contents/mainAPI/python/Untitled.ipynb?content=0&_=1508581488541 (50.112.194.65) 0.84ms
+[I 10:39:15.911 NotebookApp] Saving file at /mainAPI/python/csvtest.ipynb
+[I 10:43:14.948 NotebookApp] Adapting to protocol v5.1 for kernel 803584e6-3ee6-4a2a-a69a-b11d0520410e
+[I 10:44:10.502 NotebookApp] 302 GET /api/terminals?_=1508577941068 (150.70.188.166) 0.78ms
+[I 10:44:17.369 NotebookApp] 302 GET /api/contents/mainAPI/python?type=directory&_=1508577941069 (150.70.188.175) 0.90ms
+[I 10:44:35.369 NotebookApp] 302 GET /api/sessions?_=1508577941067 (150.70.188.172) 0.88ms
+[W 10:44:44.949 NotebookApp] WebSocket ping timeout after 90000 ms.
+[I 10:44:50.894 NotebookApp] Saving file at /mainAPI/python/Untitled.ipynb
+[I 10:46:42.840 NotebookApp] 302 GET /api/contents/mainAPI/python/Untitled.ipynb?content=0&_=1508581488542 (150.70.188.172) 0.87ms
+[I 10:46:50.629 NotebookApp] Saving file at /mainAPI/python/Untitled.ipynb
+[I 10:48:40.926 NotebookApp] 302 GET /api/contents/mainAPI/python/Untitled.ipynb?content=0&_=1508581488543 (50.112.194.65) 0.87ms
+[I 10:48:50.709 NotebookApp] Saving file at /mainAPI/python/Untitled.ipynb
+[I 10:50:25.139 NotebookApp] 302 GET /api/contents/mainAPI/python/Untitled.ipynb?content=0&_=1508581488544 (150.70.188.177) 0.88ms
+[I 10:50:50.571 NotebookApp] Saving file at /mainAPI/python/Untitled.ipynb
+[I 10:52:34.675 NotebookApp] Saving file at /mainAPI/python/mysqltest.ipynb
+[I 10:52:46.380 NotebookApp] Saving file at /mainAPI/python/mysqltest.ipynb
+[I 10:52:59.848 NotebookApp] 302 GET /api/contents/mainAPI/python/Untitled.ipynb?content=0&_=1508581488545 (50.112.194.65) 0.85ms
+[I 10:54:00.427 NotebookApp] Saving file at /mainAPI/data/it.csv
+[W 10:54:04.591 NotebookApp] 404 GET /favicon.ico (183.74.192.77) 1.34ms referer=http://52.199.175.14:8888/view/mainAPI/data/it.csv
+[I 10:54:19.958 NotebookApp] 302 GET /api/contents/mainAPI/python/mysqltest.ipynb?content=0&_=1508581488547 (150.70.188.169) 0.89ms
+[I 10:54:22.136 NotebookApp] 302 GET /api/contents/mainAPI/python?type=directory&_=1508577941072 (150.70.188.165) 0.84ms
+[I 10:54:26.990 NotebookApp] 302 GET /api/contents/mainAPI/python/mysqltest.ipynb?content=0&_=1508581488546 (150.70.188.172) 0.85ms
+[I 10:54:37.632 NotebookApp] 302 GET /api/sessions?_=1508583220444 (150.70.188.179) 0.90ms
+[I 10:54:46.485 NotebookApp] 302 GET /api/sessions?_=1508577941070 (150.70.188.168) 0.86ms
+[I 10:54:50.443 NotebookApp] 302 GET /api/terminals?_=1508577941071 (150.70.188.175) 0.80ms
+[I 10:55:27.660 NotebookApp] 302 GET /view/mainAPI/data/it.csv (150.70.188.180) 0.65ms
+[I 10:55:27.902 NotebookApp] 302 GET /api/contents/mainAPI/data?type=directory&_=1508583220443 (50.112.194.65) 0.87ms
+[I 10:55:33.618 NotebookApp] 302 GET /api/contents/mainAPI/data?type=directory&_=1508583220445 (150.70.188.170) 0.85ms
+[I 10:55:34.050 NotebookApp] 302 GET /api/config/tree?_=1508583218529 (50.112.194.65) 0.83ms
+[I 10:55:34.745 NotebookApp] 302 GET /api/contents/mainAPI/python?type=directory&_=1508583212793 (50.112.194.65) 0.87ms
+[I 10:55:37.315 NotebookApp] 302 GET /api/config/common?_=1508583218530 (52.27.2.86) 0.83ms
+[I 10:55:39.370 NotebookApp] 302 GET /api/sessions?_=1508583220441 (52.27.2.86) 0.85ms
+[I 10:55:39.403 NotebookApp] 302 GET /api/config/tree?_=1508583212788 (50.112.194.65) 0.79ms
+[I 10:55:40.120 NotebookApp] 302 GET /api/terminals?_=1508583220437 (50.112.194.65) 1.00ms
+[I 10:55:41.860 NotebookApp] 302 GET /api/terminals?_=1508583218531 (52.27.2.86) 0.75ms
+[I 10:55:42.102 NotebookApp] 302 GET /tree/mainAPI/data (52.27.2.86) 0.68ms
+[I 10:55:42.495 NotebookApp] 302 GET /api/terminals?_=1508583220442 (52.27.2.86) 0.89ms
+[I 10:55:44.740 NotebookApp] 302 GET /api/contents/mainAPI?type=directory&_=1508583218534 (50.112.194.65) 0.86ms
+[I 10:55:47.804 NotebookApp] 302 GET /api/sessions?_=1508583218532 (52.27.2.86) 0.78ms
+[I 10:55:48.619 NotebookApp] 302 GET /api/terminals?_=1508583212792 (52.27.2.86) 0.75ms
+[I 10:55:49.664 NotebookApp] 302 GET /files/mainAPI/data/it.csv (150.70.188.169) 0.68ms
+[I 10:55:52.050 NotebookApp] 302 GET /api/sessions?_=1508583220438 (52.27.2.86) 0.85ms
+[I 10:55:54.365 NotebookApp] 302 GET /api/terminals?_=1508583212790 (50.112.194.65) 0.82ms
+[I 10:55:54.725 NotebookApp] 302 GET /api/config/common?_=1508583220436 (50.112.194.65) 0.90ms
+[I 10:55:57.516 NotebookApp] 302 GET /api/terminals?_=1508583220439 (50.112.194.65) 0.78ms
+[I 10:56:07.142 NotebookApp] 302 GET /api/sessions?_=1508583212791 (50.112.194.65) 0.83ms
+[I 10:56:11.595 NotebookApp] 302 GET /api/config/common?_=1508583212789 (52.27.2.86) 0.89ms
+[I 10:56:16.706 NotebookApp] 302 GET /api/terminals?_=1508583218533 (52.27.2.86) 0.83ms
+[I 10:56:18.572 NotebookApp] 302 GET /api/config/tree?_=1508583220435 (52.27.2.86) 0.88ms
+[I 10:56:18.907 NotebookApp] 302 GET /api/contents/mainAPI/data?type=directory&_=1508583220440 (50.112.194.65) 0.83ms
+[I 10:56:20.956 NotebookApp] 302 GET /api/kernelspecs (52.27.2.86) 0.81ms
+[I 13:19:48.782 NotebookApp] 302 GET / (180.200.70.218) 0.40ms
+[I 13:19:48.804 NotebookApp] 302 GET /tree? (180.200.70.218) 0.52ms
+[I 13:20:06.850 NotebookApp] 302 POST /login?next=%2Ftree%3F (180.200.70.218) 1.06ms
+[I 13:20:28.884 NotebookApp] Adapting to protocol v5.1 for kernel 5424d526-3cf9-4968-a8a4-7bde00174e4a
+[I 13:20:32.096 NotebookApp] Adapting to protocol v5.1 for kernel 045d5cd2-4f97-412b-9dfb-d0975f2e4380
+[I 13:20:35.818 NotebookApp] Adapting to protocol v5.1 for kernel 583ae7b6-accb-4588-9bf6-8160f847cec1
+[I 13:20:38.861 NotebookApp] Adapting to protocol v5.1 for kernel 803584e6-3ee6-4a2a-a69a-b11d0520410e
+[I 13:22:32.074 NotebookApp] Saving file at /mainAPI/python/mysqltest.ipynb
+[I 13:24:32.067 NotebookApp] Saving file at /mainAPI/python/mysqltest.ipynb
+[I 13:26:32.765 NotebookApp] Saving file at /mainAPI/python/mysqltest.ipynb
+[C 13:29:38.323 NotebookApp] received signal 15, stopping
+[I 13:29:38.324 NotebookApp] Shutting down kernels
+[I 13:29:38.835 NotebookApp] Kernel shutdown: 803584e6-3ee6-4a2a-a69a-b11d0520410e
+[I 13:29:38.935 NotebookApp] Kernel shutdown: 5424d526-3cf9-4968-a8a4-7bde00174e4a
+[I 13:29:38.936 NotebookApp] Kernel shutdown: 583ae7b6-accb-4588-9bf6-8160f847cec1
+[I 13:29:38.936 NotebookApp] Kernel shutdown: 045d5cd2-4f97-412b-9dfb-d0975f2e4380
+[W 14:21:01.189 NotebookApp] WARNING: The notebook server is listening on all IP addresses and not using encryption. This is not recommended.
+[I 14:21:01.215 NotebookApp] JupyterLab alpha preview extension loaded from /home/ubuntu/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/jupyterlab
+JupyterLab v0.27.0
+Known labextensions:
+[I 14:21:01.217 NotebookApp] Running the core application with no additional extensions or settings
+[I 14:21:01.220 NotebookApp] Serving notebooks from local directory: /home/ubuntu/NG_1706
+[I 14:21:01.220 NotebookApp] 0 active kernels 
+[I 14:21:01.220 NotebookApp] The Jupyter Notebook is running at: http://[all ip addresses on your system]:8888/?token=75c8fb0922731ddd65ec39cb005447844463cdae6b7651e8
+[I 14:21:01.220 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 14:21:01.220 NotebookApp] 
+    
+    Copy/paste this URL into your browser when you connect for the first time,
+    to login with a token:
+        http://localhost:8888/?token=75c8fb0922731ddd65ec39cb005447844463cdae6b7651e8
+[I 14:21:11.936 NotebookApp] Kernel started: 24fdd763-c3f8-47a3-95bf-f0fa7c7873a1
+[I 14:21:12.845 NotebookApp] Adapting to protocol v5.1 for kernel 24fdd763-c3f8-47a3-95bf-f0fa7c7873a1
+[I 14:21:15.912 NotebookApp] Kernel started: f5e99b97-ce81-486c-9aa0-de2a44a33d41
+[I 14:21:16.836 NotebookApp] Adapting to protocol v5.1 for kernel f5e99b97-ce81-486c-9aa0-de2a44a33d41
+[I 15:41:11.745 NotebookApp] 302 GET / (180.200.70.218) 0.46ms
+[I 15:52:15.296 NotebookApp] Kernel started: 287dd21d-005b-4965-a6bf-aa208d213309
+[I 15:52:16.205 NotebookApp] Adapting to protocol v5.1 for kernel 287dd21d-005b-4965-a6bf-aa208d213309
+[I 15:52:28.225 NotebookApp] Kernel restarted: 287dd21d-005b-4965-a6bf-aa208d213309
+[W 15:52:28.228 NotebookApp] zmq message arrived on closed channel
+[I 15:52:29.170 NotebookApp] Adapting to protocol v5.1 for kernel 287dd21d-005b-4965-a6bf-aa208d213309
+[I 15:52:31.803 NotebookApp] Adapting to protocol v5.1 for kernel f5e99b97-ce81-486c-9aa0-de2a44a33d41
+[I 15:52:36.341 NotebookApp] Adapting to protocol v5.1 for kernel 24fdd763-c3f8-47a3-95bf-f0fa7c7873a1
+[I 15:52:54.213 NotebookApp] Kernel interrupted: 24fdd763-c3f8-47a3-95bf-f0fa7c7873a1
+[I 15:54:15.742 NotebookApp] Saving file at /mainAPI/python/test2.ipynb
+[I 15:56:36.310 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 15:58:36.314 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 15:59:55.819 NotebookApp] Saving file at /mainAPI/python/mysqltest.ipynb
+[I 15:59:59.686 NotebookApp] Saving file at /mainAPI/python/test2.ipynb
+[I 16:04:36.302 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 16:06:19.750 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 16:07:07.533 NotebookApp] Kernel started: 9b9361eb-7e86-4360-a047-d9e3c2a9ed16
+[I 16:07:08.432 NotebookApp] Adapting to protocol v5.1 for kernel 9b9361eb-7e86-4360-a047-d9e3c2a9ed16
+[I 16:14:36.336 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 16:16:36.303 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 16:18:36.301 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 16:20:36.306 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 16:22:36.299 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 16:24:36.346 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 16:24:44.233 NotebookApp] Kernel restarted: 24fdd763-c3f8-47a3-95bf-f0fa7c7873a1
+[I 16:24:45.181 NotebookApp] Adapting to protocol v5.1 for kernel 24fdd763-c3f8-47a3-95bf-f0fa7c7873a1
+[I 16:26:36.307 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 16:30:36.302 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 16:33:06.405 NotebookApp] Kernel started: b390b3cb-c3db-4f72-b56c-3159d9a75904
+[I 16:33:07.317 NotebookApp] Adapting to protocol v5.1 for kernel b390b3cb-c3db-4f72-b56c-3159d9a75904
+[I 16:38:36.343 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 16:40:36.816 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 16:42:36.387 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 16:44:36.824 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 16:50:36.869 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 16:54:36.408 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 16:58:36.854 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 17:00:36.434 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 17:02:36.847 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 17:04:36.845 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 17:08:36.846 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 17:10:36.422 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 17:14:36.433 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 17:16:36.876 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[W 17:16:37.663 NotebookApp] 404 GET /favicon.ico (180.200.70.218) 7.33ms referer=http://52.199.175.14:8888/view/mainAPI/data/jk.csv
+[I 17:18:36.910 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 17:26:36.944 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 17:50:58.030 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 01:08:05.939 NotebookApp] 302 GET / (49.106.213.206) 0.43ms
+[I 01:09:12.259 NotebookApp] 302 GET /api/contents?type=directory&_=1508634485880 (150.70.188.176) 0.95ms
+[I 01:09:23.540 NotebookApp] 302 GET /api/config/common?_=1508634485876 (150.70.188.171) 0.92ms
+[I 01:09:35.522 NotebookApp] 302 GET / (150.70.188.169) 0.43ms
+[I 01:09:35.639 NotebookApp] 302 GET /tree? (150.70.188.169) 0.72ms
+[I 01:09:36.125 NotebookApp] 302 GET /api/terminals?_=1508634485879 (150.70.188.170) 0.83ms
+[I 01:09:36.126 NotebookApp] 302 GET /api/kernelspecs (150.70.188.170) 0.67ms
+[I 01:09:43.226 NotebookApp] 302 GET /api/sessions?_=1508634485878 (150.70.188.165) 0.87ms
+[I 01:09:43.231 NotebookApp] 302 GET /api/config/tree?_=1508634485875 (150.70.188.167) 0.64ms
+[I 01:10:13.072 NotebookApp] 302 GET /api/terminals?_=1508634485877 (150.70.188.177) 0.76ms
+[I 01:10:41.174 NotebookApp] 302 GET /api/contents?type=directory&_=1508634485883 (50.112.194.65) 1.03ms
+[I 01:11:06.028 NotebookApp] 302 GET /api/terminals?_=1508634485882 (50.112.194.65) 0.71ms
+[I 01:11:25.033 NotebookApp] 302 GET /api/sessions?_=1508634485881 (52.27.2.86) 0.82ms
+[I 01:11:26.999 NotebookApp] 302 GET /api/contents?type=directory&_=1508634485886 (150.70.188.172) 0.84ms
+[I 01:11:35.985 NotebookApp] 302 GET /api/sessions?_=1508634485884 (150.70.188.176) 0.82ms
+[I 01:11:37.502 NotebookApp] 302 GET /api/terminals?_=1508634485885 (150.70.188.167) 0.76ms
+[I 01:12:11.811 NotebookApp] 302 GET /api/terminals?_=1508634485888 (150.70.188.176) 0.80ms
+[I 01:12:51.177 NotebookApp] 302 GET /api/sessions?_=1508634485887 (150.70.188.172) 0.79ms
+[I 01:12:57.730 NotebookApp] 302 GET /api/contents?type=directory&_=1508634485889 (52.27.2.86) 0.81ms
+[I 01:13:21.302 NotebookApp] 302 GET /api/terminals?_=1508634485891 (150.70.188.177) 0.77ms
+[I 01:13:24.832 NotebookApp] 302 GET /api/sessions?_=1508634485890 (150.70.188.179) 0.82ms
+[I 01:13:34.741 NotebookApp] 302 GET /api/contents?type=directory&_=1508634485892 (150.70.188.175) 0.89ms
+[I 01:13:39.941 NotebookApp] Adapting to protocol v5.1 for kernel 24fdd763-c3f8-47a3-95bf-f0fa7c7873a1
+[I 01:13:46.760 NotebookApp] Adapting to protocol v5.1 for kernel f5e99b97-ce81-486c-9aa0-de2a44a33d41
+[I 01:15:20.201 NotebookApp] 302 GET /api/config/common?_=1508634822968 (150.70.188.172) 0.88ms
+[I 01:15:24.513 NotebookApp] 302 GET /api/terminals?_=1508634485894 (150.70.188.180) 0.81ms
+[I 01:15:26.222 NotebookApp] 302 GET /api/terminals?_=1508634792332 (150.70.188.172) 0.80ms
+[I 01:15:31.020 NotebookApp] 302 GET /api/sessions?_=1508634485893 (52.27.2.86) 0.87ms
+[I 01:15:34.119 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 01:15:44.529 NotebookApp] 302 GET /api/contents?type=directory&_=1508634485895 (52.27.2.86) 0.91ms
+[I 01:16:01.483 NotebookApp] 302 GET /tree/mainAPI/python (50.112.194.65) 0.63ms
+[I 01:16:03.359 NotebookApp] 302 GET /api/terminals?_=1508634792334 (52.27.2.86) 0.78ms
+[I 01:16:28.952 NotebookApp] 302 GET /api/config/common?_=1508634803009 (52.27.2.86) 0.80ms
+[I 01:16:36.523 NotebookApp] 302 GET /api/kernelspecs (50.112.194.65) 0.80ms
+[I 01:16:39.273 NotebookApp] 302 GET /api/contents/mainAPI/python?type=directory&_=1508634797544 (50.112.194.65) 0.84ms
+[I 01:17:05.627 NotebookApp] 302 GET /api/terminals?_=1508634797541 (50.112.194.65) 0.78ms
+[I 01:17:14.140 NotebookApp] 302 GET /api/config/common?_=1508634792331 (50.112.194.65) 0.90ms
+[I 01:17:14.166 NotebookApp] 302 GET /api/config/tree?_=1508634792330 (50.112.194.65) 0.68ms
+[I 01:17:16.096 NotebookApp] 302 GET /notebooks/mainAPI/python/mysqltest.ipynb (50.112.194.65) 0.67ms
+[W 01:17:16.878 NotebookApp] Couldn't authenticate WebSocket connection
+[W 01:17:16.879 NotebookApp] 403 GET /api/kernels/24fdd763-c3f8-47a3-95bf-f0fa7c7873a1/channels?session_id=87364E82E28C456D88775EB224FB3B45 (50.112.194.65) 2.55ms referer=None
+[I 01:17:23.812 NotebookApp] 302 GET /api/contents/mainAPI/python/main.ipynb/checkpoints?_=1508634803011 (52.27.2.86) 0.84ms
+[I 01:17:24.402 NotebookApp] 302 GET /api/sessions?_=1508634792333 (52.27.2.86) 0.84ms
+[I 01:17:24.885 NotebookApp] 302 GET /api/terminals?_=1508634797543 (52.27.2.86) 0.78ms
+[I 01:17:25.433 NotebookApp] 302 GET /api/contents/mainAPI/python/main.ipynb?content=0&_=1508634803012 (150.70.188.166) 0.92ms
+[I 01:17:25.967 NotebookApp] 302 GET /api/contents/mainAPI/python/mysqltest.ipynb/checkpoints?_=1508634822970 (52.27.2.86) 0.84ms
+[I 01:17:29.900 NotebookApp] 302 GET /notebooks/mainAPI/python/main.ipynb (52.27.2.86) 0.61ms
+[I 01:17:30.822 NotebookApp] 302 GET /api/contents/mainAPI/python/main.ipynb?type=notebook&_=1508634803010 (52.27.2.86) 0.84ms
+[I 01:17:44.367 NotebookApp] 302 GET /api/config/tree?_=1508634797539 (52.27.2.86) 0.82ms
+[I 01:17:45.070 NotebookApp] 302 GET /api/sessions?_=1508634797542 (52.27.2.86) 0.86ms
+[I 01:17:47.516 NotebookApp] 302 GET /api/config/notebook?_=1508634803008 (50.112.194.65) 0.86ms
+[I 01:17:51.337 NotebookApp] 302 GET /api/contents/mainAPI?type=directory&_=1508634792335 (50.112.194.65) 0.91ms
+[I 01:17:52.335 NotebookApp] 302 GET /api/config/common?_=1508634797540 (52.27.2.86) 0.86ms
+[I 01:17:53.993 NotebookApp] 302 GET /api/config/notebook?_=1508634822967 (52.27.2.86) 0.86ms
+[I 01:17:54.499 NotebookApp] 302 GET /tree/mainAPI (52.27.2.86) 0.61ms
+[W 01:17:55.996 NotebookApp] Couldn't authenticate WebSocket connection
+[W 01:17:55.997 NotebookApp] 403 GET /api/kernels/f5e99b97-ce81-486c-9aa0-de2a44a33d41/channels?session_id=755F59FC82AF4DF694787BDED248A578 (52.27.2.86) 2.39ms referer=None
+[I 01:17:57.166 NotebookApp] 302 GET /api/contents/mainAPI/python/mysqltest.ipynb?type=notebook&_=1508634822969 (52.27.2.86) 0.86ms
+[I 01:19:34.434 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 01:21:33.474 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 01:21:45.246 NotebookApp] 302 GET /api/contents/mainAPI/python/main.ipynb?content=0&_=1508634803013 (150.70.188.177) 0.91ms
+[I 01:23:26.691 NotebookApp] 302 GET /?token=e94a3d6571e0c1e24f628afc8f330570b1ea756d1722b4ea (49.106.213.206) 0.42ms
+[I 01:23:33.298 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 01:23:39.025 NotebookApp] 302 GET /api/contents/mainAPI/python/main.ipynb?content=0&_=1508634803014 (50.112.194.65) 0.89ms
+[I 01:23:58.125 NotebookApp] Adapting to protocol v5.1 for kernel f5e99b97-ce81-486c-9aa0-de2a44a33d41
+[I 01:25:20.707 NotebookApp] Adapting to protocol v5.1 for kernel f5e99b97-ce81-486c-9aa0-de2a44a33d41
+[I 01:25:34.442 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 01:25:54.025 NotebookApp] 302 GET /api/contents/mainAPI/python/main.ipynb?content=0&_=1508634803015 (52.27.2.86) 0.96ms
+[I 01:27:07.307 NotebookApp] 302 GET /api/contents/mainAPI/python/mysqltest.ipynb/checkpoints?_=1508635513982 (150.70.188.172) 0.88ms
+[I 01:27:43.394 NotebookApp] 302 GET /api/config/notebook?_=1508635513979 (52.27.2.86) 0.79ms
+[I 01:27:46.092 NotebookApp] 302 GET /api/contents/mainAPI/python/main.ipynb?content=0&_=1508634803016 (52.27.2.86) 0.87ms
+[I 01:28:05.527 NotebookApp] 302 GET /api/config/common?_=1508635513980 (52.27.2.86) 0.82ms
+[I 01:28:10.985 NotebookApp] 302 GET /api/contents/mainAPI/python/mysqltest.ipynb?type=notebook&_=1508635513981 (50.112.194.65) 0.87ms
+[W 01:28:12.692 NotebookApp] Couldn't authenticate WebSocket connection
+[W 01:28:12.693 NotebookApp] 403 GET /api/kernels/f5e99b97-ce81-486c-9aa0-de2a44a33d41/channels?session_id=19C747E71347459F813A9D2EFBFF0090 (52.27.2.86) 2.49ms referer=None
+[W 01:29:28.126 NotebookApp] WebSocket ping timeout after 119933 ms.
+[I 01:29:33.538 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 01:31:07.678 NotebookApp] 302 GET /api/contents/mainAPI/python/main.ipynb?content=0&_=1508634803017 (150.70.188.180) 0.87ms
+[I 01:31:33.619 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 01:33:33.525 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 01:34:06.312 NotebookApp] 302 GET /api/contents/mainAPI/python/main.ipynb?content=0&_=1508634803018 (50.112.194.65) 0.89ms
+[I 01:35:34.334 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 01:35:47.550 NotebookApp] 302 GET /api/contents/mainAPI/python/main.ipynb?content=0&_=1508634803019 (50.112.194.65) 0.81ms
+[I 01:37:33.553 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 01:38:18.575 NotebookApp] 302 GET /api/contents/mainAPI/python/main.ipynb?content=0&_=1508634803020 (52.27.2.86) 0.87ms
+[I 01:39:03.390 NotebookApp] Kernel restarted: 24fdd763-c3f8-47a3-95bf-f0fa7c7873a1
+[I 01:39:04.682 NotebookApp] Adapting to protocol v5.1 for kernel 24fdd763-c3f8-47a3-95bf-f0fa7c7873a1
+[I 01:39:33.190 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 01:40:04.526 NotebookApp] 302 GET /api/contents/mainAPI/python/main.ipynb?content=0&_=1508634803021 (50.112.194.65) 0.88ms
+[I 01:41:32.868 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 01:41:55.014 NotebookApp] 302 GET /api/contents/mainAPI/python/main.ipynb?content=0&_=1508634803022 (50.112.194.65) 0.84ms
+[I 01:43:32.978 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 01:44:07.596 NotebookApp] 302 GET /api/contents/mainAPI/python/main.ipynb?content=0&_=1508634803023 (52.27.2.86) 0.84ms
+[I 01:45:33.930 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 01:45:57.604 NotebookApp] 302 GET /api/contents/mainAPI/python/main.ipynb?content=0&_=1508634803024 (52.27.2.86) 0.83ms
+[I 01:47:14.321 NotebookApp] 302 GET /api/contents/mainAPI/python/main.ipynb?content=0&_=1508634803025 (150.70.188.171) 0.90ms
+[I 02:03:33.131 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 02:04:00.790 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 02:05:37.177 NotebookApp] 302 GET /api/contents/mainAPI/python/main.ipynb?content=0&_=1508634803027 (50.112.194.65) 0.83ms
+[I 02:05:44.517 NotebookApp] 302 GET /api/contents/mainAPI/python/main.ipynb?content=0&_=1508634803026 (50.112.194.65) 0.84ms
+[I 03:03:33.422 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 03:05:33.387 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 03:05:59.881 NotebookApp] 302 GET /api/contents/mainAPI/python/main.ipynb?content=0&_=1508634803028 (52.27.2.86) 0.92ms
+[I 03:07:19.399 NotebookApp] Kernel restarted: 24fdd763-c3f8-47a3-95bf-f0fa7c7873a1
+[I 03:07:19.878 NotebookApp] 302 GET /api/contents/mainAPI/python/main.ipynb?content=0&_=1508634803029 (150.70.188.169) 1.02ms
+[I 03:07:20.589 NotebookApp] Adapting to protocol v5.1 for kernel 24fdd763-c3f8-47a3-95bf-f0fa7c7873a1
+[I 03:07:34.127 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 03:07:51.279 NotebookApp] Kernel restarted: 24fdd763-c3f8-47a3-95bf-f0fa7c7873a1
+[I 03:07:52.450 NotebookApp] Adapting to protocol v5.1 for kernel 24fdd763-c3f8-47a3-95bf-f0fa7c7873a1
+[I 03:08:52.379 NotebookApp] Kernel restarted: 24fdd763-c3f8-47a3-95bf-f0fa7c7873a1
+[I 03:08:53.489 NotebookApp] Adapting to protocol v5.1 for kernel 24fdd763-c3f8-47a3-95bf-f0fa7c7873a1
+[I 03:09:15.888 NotebookApp] 302 GET /api/contents/mainAPI/python/main.ipynb?content=0&_=1508634803030 (50.112.194.65) 0.97ms
+[I 03:09:33.116 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 03:09:34.679 NotebookApp] Kernel restarted: 24fdd763-c3f8-47a3-95bf-f0fa7c7873a1
+[I 03:09:35.986 NotebookApp] Adapting to protocol v5.1 for kernel 24fdd763-c3f8-47a3-95bf-f0fa7c7873a1
+[W 03:09:45.081 NotebookApp] Couldn't authenticate WebSocket connection
+[W 03:09:45.082 NotebookApp] 403 GET /api/kernels/24fdd763-c3f8-47a3-95bf-f0fa7c7873a1/channels?session_id=87364E82E28C456D88775EB224FB3B45 (50.112.194.65) 2.63ms referer=None
+[I 03:10:10.814 NotebookApp] Kernel restarted: 24fdd763-c3f8-47a3-95bf-f0fa7c7873a1
+[I 03:10:12.089 NotebookApp] Adapting to protocol v5.1 for kernel 24fdd763-c3f8-47a3-95bf-f0fa7c7873a1
+[I 03:11:21.817 NotebookApp] Kernel restarted: 24fdd763-c3f8-47a3-95bf-f0fa7c7873a1
+[I 03:11:23.089 NotebookApp] Adapting to protocol v5.1 for kernel 24fdd763-c3f8-47a3-95bf-f0fa7c7873a1
+[I 03:11:33.963 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 03:11:39.944 NotebookApp] 302 GET /api/contents/mainAPI/python/main.ipynb?content=0&_=1508634803031 (150.70.188.169) 0.91ms
+[I 03:12:50.547 NotebookApp] Kernel restarted: 24fdd763-c3f8-47a3-95bf-f0fa7c7873a1
+[I 03:12:51.749 NotebookApp] Adapting to protocol v5.1 for kernel 24fdd763-c3f8-47a3-95bf-f0fa7c7873a1
+[I 03:13:06.356 NotebookApp] 302 GET /api/contents/mainAPI/python/main.ipynb?content=0&_=1508634803032 (150.70.188.165) 0.91ms
+[I 03:13:33.260 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 03:15:26.970 NotebookApp] 302 GET /api/contents/mainAPI/python/main.ipynb?content=0&_=1508634803033 (150.70.188.180) 0.84ms
+[I 03:17:34.613 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 03:18:18.656 NotebookApp] 302 GET /api/contents/mainAPI/python/main.ipynb?content=0&_=1508634803034 (150.70.188.170) 0.85ms
+[I 03:18:24.417 NotebookApp] Kernel restarted: 24fdd763-c3f8-47a3-95bf-f0fa7c7873a1
+[I 03:18:25.607 NotebookApp] Adapting to protocol v5.1 for kernel 24fdd763-c3f8-47a3-95bf-f0fa7c7873a1
+[I 03:18:56.032 NotebookApp] Kernel restarted: 24fdd763-c3f8-47a3-95bf-f0fa7c7873a1
+[I 03:18:57.207 NotebookApp] Adapting to protocol v5.1 for kernel 24fdd763-c3f8-47a3-95bf-f0fa7c7873a1
+[I 03:19:29.700 NotebookApp] Kernel restarted: 24fdd763-c3f8-47a3-95bf-f0fa7c7873a1
+[I 03:19:30.832 NotebookApp] Adapting to protocol v5.1 for kernel 24fdd763-c3f8-47a3-95bf-f0fa7c7873a1
+[I 03:19:33.092 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 03:20:10.667 NotebookApp] Kernel restarted: 24fdd763-c3f8-47a3-95bf-f0fa7c7873a1
+[I 03:20:11.771 NotebookApp] Adapting to protocol v5.1 for kernel 24fdd763-c3f8-47a3-95bf-f0fa7c7873a1
+[I 03:21:33.201 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 03:21:58.600 NotebookApp] 302 GET /api/contents/mainAPI/python/main.ipynb?content=0&_=1508634803035 (52.27.2.86) 0.90ms
+[I 03:24:00.287 NotebookApp] 302 GET /api/contents/mainAPI/python/main.ipynb?content=0&_=1508634803036 (52.27.2.86) 0.89ms
+[I 03:37:34.109 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 03:38:39.404 NotebookApp] 302 GET /api/contents/mainAPI/python/main.ipynb?content=0&_=1508634803037 (150.70.188.172) 0.86ms
+[I 03:39:07.827 NotebookApp] Kernel restarted: 24fdd763-c3f8-47a3-95bf-f0fa7c7873a1
+[I 03:39:08.951 NotebookApp] Adapting to protocol v5.1 for kernel 24fdd763-c3f8-47a3-95bf-f0fa7c7873a1
+[I 03:39:33.420 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[W 03:41:11.077 NotebookApp] Couldn't authenticate WebSocket connection
+[W 03:41:11.079 NotebookApp] 403 GET /api/kernels/24fdd763-c3f8-47a3-95bf-f0fa7c7873a1/channels?session_id=87364E82E28C456D88775EB224FB3B45 (150.70.188.171) 2.66ms referer=None
+[I 03:41:33.809 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 03:41:45.161 NotebookApp] 302 GET /api/contents/mainAPI/python/main.ipynb?content=0&_=1508634803038 (150.70.188.179) 0.90ms
+[I 03:42:45.068 NotebookApp] Kernel restarted: 24fdd763-c3f8-47a3-95bf-f0fa7c7873a1
+[I 03:42:46.180 NotebookApp] Kernel restarted: 24fdd763-c3f8-47a3-95bf-f0fa7c7873a1
+[I 03:42:46.421 NotebookApp] Adapting to protocol v5.1 for kernel 24fdd763-c3f8-47a3-95bf-f0fa7c7873a1
+[I 03:42:47.469 NotebookApp] Adapting to protocol v5.1 for kernel 24fdd763-c3f8-47a3-95bf-f0fa7c7873a1
+[I 03:43:34.789 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 03:43:55.591 NotebookApp] 302 GET /api/contents/mainAPI/python/main.ipynb?content=0&_=1508634803039 (50.112.194.65) 0.89ms
+[I 03:45:26.526 NotebookApp] 302 GET /api/contents/mainAPI/python/main.ipynb?content=0&_=1508634803040 (150.70.188.172) 0.84ms
+[I 03:49:34.206 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 03:51:28.112 NotebookApp] 302 GET /api/contents/mainAPI/python/main.ipynb?content=0&_=1508634803041 (150.70.188.176) 0.95ms
+[I 03:51:34.305 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 03:53:47.610 NotebookApp] 302 GET /api/contents/mainAPI/python/main.ipynb?content=0&_=1508634803042 (50.112.194.65) 0.88ms
+[I 04:01:34.438 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 04:03:36.675 NotebookApp] 302 GET /api/contents/mainAPI/python/main.ipynb?content=0&_=1508634803043 (150.70.188.166) 0.85ms
+[I 04:19:03.926 NotebookApp] Kernel restarted: 24fdd763-c3f8-47a3-95bf-f0fa7c7873a1
+[I 04:19:05.069 NotebookApp] Adapting to protocol v5.1 for kernel 24fdd763-c3f8-47a3-95bf-f0fa7c7873a1
+[I 04:19:33.274 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[W 04:20:30.012 NotebookApp] Couldn't authenticate WebSocket connection
+[W 04:20:30.014 NotebookApp] 403 GET /api/kernels/24fdd763-c3f8-47a3-95bf-f0fa7c7873a1/channels?session_id=87364E82E28C456D88775EB224FB3B45 (150.70.188.177) 2.51ms referer=None
+[I 04:21:33.801 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 04:22:02.380 NotebookApp] 302 GET /api/contents/mainAPI/python/main.ipynb?content=0&_=1508634803044 (52.27.2.86) 0.86ms
+[I 04:23:43.234 NotebookApp] 302 GET /api/contents/mainAPI/python/main.ipynb?content=0&_=1508634803045 (150.70.188.176) 0.83ms
+[I 04:28:25.604 NotebookApp] Kernel restarted: 24fdd763-c3f8-47a3-95bf-f0fa7c7873a1
+[I 04:28:26.825 NotebookApp] Adapting to protocol v5.1 for kernel 24fdd763-c3f8-47a3-95bf-f0fa7c7873a1
+[I 04:29:34.125 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 04:31:19.297 NotebookApp] 302 GET /api/contents/mainAPI/python/main.ipynb?content=0&_=1508634803046 (150.70.188.165) 0.89ms
+[I 04:31:34.361 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 04:33:34.538 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 04:33:39.145 NotebookApp] 302 GET /api/contents/mainAPI/python/main.ipynb?content=0&_=1508634803047 (52.27.2.86) 0.87ms
+[I 04:35:13.203 NotebookApp] 302 GET /api/contents/mainAPI/python/main.ipynb?content=0&_=1508634803048 (150.70.188.167) 0.84ms
+[I 04:39:33.917 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 04:41:12.785 NotebookApp] 302 GET /api/contents/mainAPI/python/main.ipynb?content=0&_=1508634803049 (150.70.188.166) 0.92ms
+[I 04:41:34.882 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 04:43:31.086 NotebookApp] 302 GET /api/contents/mainAPI/python/main.ipynb?content=0&_=1508634803050 (150.70.188.176) 0.86ms
+[I 04:43:34.712 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 04:44:17.659 NotebookApp] 302 GET /api/contents/mainAPI/python/main.ipynb?content=0&_=1508634803051 (150.70.188.170) 0.85ms
+[I 04:45:35.971 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 04:47:59.481 NotebookApp] 302 GET /api/contents/mainAPI/python/main.ipynb?content=0&_=1508634803052 (50.112.194.65) 0.91ms
+[I 04:49:35.780 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 04:51:38.189 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 04:52:06.731 NotebookApp] 302 GET /api/contents/mainAPI/python/main.ipynb?content=0&_=1508634803053 (52.27.2.86) 0.84ms
+[I 04:54:10.144 NotebookApp] 302 GET /api/contents/mainAPI/python/main.ipynb?content=0&_=1508634803054 (50.112.194.65) 0.85ms
+[I 04:55:36.933 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 04:57:39.505 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 04:58:11.415 NotebookApp] 302 GET /api/contents/mainAPI/python/main.ipynb?content=0&_=1508634803055 (50.112.194.65) 0.84ms
+[I 04:58:35.051 NotebookApp] 302 GET /api/contents/mainAPI/python/main.ipynb?content=0&_=1508634803056 (150.70.188.165) 0.86ms
+[I 05:05:38.349 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[W 05:05:56.325 NotebookApp] 404 GET /favicon.ico (49.106.213.206) 1.40ms referer=http://52.199.175.14:8888/view/mainAPI/data/jk.csv
+[I 05:07:41.327 NotebookApp] Saving file at /mainAPI/python/main.ipynb
+[I 05:07:42.965 NotebookApp] 302 GET /api/contents/mainAPI/python/main.ipynb?content=0&_=1508634803057 (52.27.2.86) 0.85ms
+[I 05:07:43.780 NotebookApp] 302 GET /api/kernelspecs (52.27.2.86) 0.87ms
+[I 05:07:47.720 NotebookApp] 302 GET /api/contents/mainAPI?type=directory&_=1508648748631 (52.27.2.86) 0.93ms
+[I 05:07:53.198 NotebookApp] 302 GET /tree/mainAPI (50.112.194.65) 0.63ms
+[I 05:07:55.151 NotebookApp] 302 GET /api/terminals?_=1508648748628 (50.112.194.65) 0.80ms
+[I 05:07:56.018 NotebookApp] 302 GET /api/sessions?_=1508648744360 (50.112.194.65) 0.84ms
+[I 05:07:56.903 NotebookApp] 302 GET /view/mainAPI/data/jk.csv (52.27.2.86) 0.63ms
+[I 05:08:00.015 NotebookApp] 302 GET /api/config/common?_=1508648752221 (52.27.2.86) 0.84ms
+[I 05:08:01.864 NotebookApp] 302 GET /api/config/common?_=1508648744358 (52.27.2.86) 0.82ms
+[I 05:08:02.878 NotebookApp] 302 GET /api/terminals?_=1508648744359 (50.112.194.65) 0.81ms
+[I 05:08:03.148 NotebookApp] 302 GET /files/mainAPI/data/jk.csv (50.112.194.65) 0.61ms
+[I 05:08:03.901 NotebookApp] 302 GET /api/terminals?_=1508648752224 (50.112.194.65) 0.82ms
+[I 05:08:10.015 NotebookApp] 302 GET /api/terminals?_=1508648752222 (52.27.2.86) 0.75ms
+[I 05:08:11.816 NotebookApp] 302 GET /api/config/tree?_=1508648748626 (52.27.2.86) 0.84ms
+[I 05:08:16.499 NotebookApp] 302 GET /tree/mainAPI/data (52.27.2.86) 0.63ms
+[I 05:08:19.813 NotebookApp] 302 GET /api/sessions?_=1508648748629 (52.27.2.86) 0.81ms
+[I 05:08:23.503 NotebookApp] 302 GET /api/terminals?_=1508648744361 (50.112.194.65) 0.81ms
+[I 05:08:26.393 NotebookApp] 302 GET /api/config/common?_=1508648748627 (52.27.2.86) 0.83ms
+[I 05:08:27.648 NotebookApp] 302 GET /api/contents/mainAPI/python?type=directory&_=1508648744362 (52.27.2.86) 0.84ms
+[I 05:08:28.185 NotebookApp] 302 GET /api/config/tree?_=1508648752220 (50.112.194.65) 0.84ms
+[I 05:09:43.887 NotebookApp] 302 GET /api/contents/mainAPI/python/main.ipynb?content=0&_=1508634803058 (52.27.2.86) 0.87ms
