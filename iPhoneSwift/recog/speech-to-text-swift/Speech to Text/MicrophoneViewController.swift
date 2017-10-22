@@ -23,15 +23,22 @@ class MicrophoneViewController: UIViewController, URLSessionTaskDelegate {
     var speechToTextSession: SpeechToTextSession!
     var isStreaming = false
     var honbun = ""
+    //key(単語),value(意味)の表示
+    var keyTemp = ""
+    var key1 = ""
+    var key2 = ""
+    var key3 = ""
+    var valueTemp = ""
+    var value1 = ""
+    var value2 = ""
+    var value3 = ""
+    var memo1: String = ""
+    var memo2: String = ""
+    var memo3: String = ""
+
 
     //    nsurlsession
     let request: Request = Request()
-//    let urlString = "http://52.199.175.14:8080/"
-//    let config = URLSessionConfiguration.default
-//    let session = URLSession.shared
-//    var req = URLRequest(url: URL(string: "http://52.199.175.14:8080/connecttest/")!)
-//    var req = URL(String: "http://52.199.175.14:8080/")
-    
     
     @IBOutlet weak var microphoneButton: UIButton!
     
@@ -59,18 +66,34 @@ class MicrophoneViewController: UIViewController, URLSessionTaskDelegate {
     }
     
     @IBAction func didPressMicrophoneButton(_ sender: UIButton) {
-        streamMicrophoneBasic()
+        
+        streamMicrophoneBasic(wordView1,wordView2,wordView3)
+//        print("memo1"+memo1)
+//
+//        self.wordView1.text = memo1
+//        self.wordView2.text = memo2
+//        self.wordView3.text = memo3
     }
+
     
     /**
      This function demonstrates how to use the basic
      `SpeechToText` class to transcribe microphone audio.
      */
-    public func streamMicrophoneBasic() {
+    public func streamMicrophoneBasic( _: UITextView!, _: UITextView!, _: UITextView!) {
+//        var memo1 = ""
+//        var memo2 = ""
+//        var memo3 = ""
+        
+//        weak var wordView1: UITextView!
+//        weak var wordView2: UITextView!
+//        weak var wordView3: UITextView!
+        print("test1")
         if !isStreaming {
             // update state
             microphoneButton.setTitle("会話終了", for: .normal)
             isStreaming = true
+            print("test2")
             
             // define recognition settings
             var settings = RecognitionSettings(contentType: .opus)
@@ -82,8 +105,13 @@ class MicrophoneViewController: UIViewController, URLSessionTaskDelegate {
             // start recognizing microphone audio
             speechToText.recognizeMicrophone(settings: settings, model: "ja-JP_BroadbandModel", failure: failure) {
                 results in
+                print("test3")
                 //会話文挿入
                 self.textView.text = results.bestTranscript
+//                print(self.memo1)
+                self.wordView1.text = self.memo1
+                self.wordView2.text = self.memo2
+                self.wordView3.text = self.memo3
                 //if(translate == true)
                 //translateButton 押したときよう
                 self.honbun = results.bestTranscript
@@ -92,22 +120,22 @@ class MicrophoneViewController: UIViewController, URLSessionTaskDelegate {
                 let converUTF8 = conver.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed)
                 
                 //http通信
-                let url: NSURL = NSURL(string: "http://52.199.175.14:8080/connecttest/"+converUTF8!)!
+                let url: NSURL = NSURL(string: "http://52.199.175.14:8080/exchangejk/"+converUTF8!)!
                 //たぶん何もしてない
                 let body: NSMutableDictionary = NSMutableDictionary()
                 body.setValue("value", forKey: "key")
                 
                 do {
                     //送信
+                    print("test4")
                     try self.request.post(url: url as URL , body: body, completionHandler: { data, response, error in
                         // code
-                        print("data:")
-                        print(data) 
-                        print("\n")
-                        
+//                        print(String(describing: type(of: data)))
                         let str = String(data: data!, encoding: .utf8)!
                         print(str)
+                        print("test5")
                         do {
+                            print("test6")
                             let demo = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.allowFragments) // JSONパース。optionsは型推論可
                             let top = demo as! NSDictionary // トップレベルが配列
                                 print(top["status"] as! String) //200
@@ -115,11 +143,27 @@ class MicrophoneViewController: UIViewController, URLSessionTaskDelegate {
                             let find_phrase = top["find_phrase"] as! NSDictionary
                             for (key, value) in find_phrase {
                                 print(key)
+                                self.keyTemp = key as! String
                                 print(value)
+                                self.valueTemp = value as! String
                             }
 //                            }
                         } catch {
                             print(error) // パースに失敗したときにエラーを表示
+                        }
+                        // 単語，意味更新
+                        if(self.key1 != self.keyTemp){
+                            self.key3 = self.key2
+                            self.key2 = self.key1
+                            self.key1 = self.keyTemp
+                            self.value3 = self.value2
+                            self.value2 = self.value1
+                            self.value1 = self.valueTemp
+                            
+                            //countに応じてwordViewを表示&更新
+                            self.memo1 = self.key1 + ":" + self.value1
+                            self.memo2 = self.key2 + ":" + self.value2
+                            self.memo3 = self.key3 + ":" + self.value3
                         }
                         
                     })
@@ -136,7 +180,9 @@ class MicrophoneViewController: UIViewController, URLSessionTaskDelegate {
             // stop recognizing microphone audio
             speechToText.stopRecognizeMicrophone()
         }
+//        return (memo1, memo2, memo3)
     }
+    
     
     /**
      This function demonstrates how to use the more advanced
@@ -188,15 +234,6 @@ class MicrophoneViewController: UIViewController, URLSessionTaskDelegate {
         }else{
             onJK = false
         }
-        //key(単語),value(意味)の表示
-        var keyTemp = ""
-        var key1 = ""
-        var key2 = ""
-        var key3 = ""
-        var valueTemp = ""
-        var value1 = ""
-        var value2 = ""
-        var value3 = ""
         //会話文全部(stringのurlエンコードをutf-8に変更)
         let converUTF8 = honbun.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed)
         
@@ -223,9 +260,9 @@ class MicrophoneViewController: UIViewController, URLSessionTaskDelegate {
                     let find_phrase = top["find_phrase"] as! NSDictionary
                     for (key, value) in find_phrase {
                         print(key)
-                        keyTemp = key as! String
+//                        self.keyTemp = key as! String
                         print(value)
-                        valueTemp = value as! String
+//                        self.valueTemp = value as! String
                     }
                     //                            }
                 } catch {
@@ -235,23 +272,9 @@ class MicrophoneViewController: UIViewController, URLSessionTaskDelegate {
         } catch {
             print("error")
         }
-        if(key1 != keyTemp){
-            key3 = key2
-            key2 = key1
-            key1 = keyTemp
-            value3 = value2
-            value2 = value1
-            value1 = valueTemp
-    
-        //countに応じてwordViewを表示&更新
-        if(count>=1) {wordView1.isHidden = false;}
-        if(count>=2) {wordView2.isHidden = false;}
-        if(count>=3) {wordView3.isHidden = false;}
-        wordView1.text = key1 + ":" + value1
-        wordView2.text = key2 + ":" + value2
-        wordView3.text = key3 + ":" + value3
-        }
+       
         //インクリメント
         count+=1;
+//        return(wordView1,wordView2,wordView3)
     }
 }
